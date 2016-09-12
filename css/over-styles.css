@@ -1,11 +1,158 @@
 body {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 3em 2em;
 }
 
-.left {
-	background-color: red;
+h1 {
+  color: #fff;
+  font-family: "futura-pt",sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
-.right {
-	background-color: green;
+
+p {
+  font-family: "FreightDispProLight-Regular";
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  -webkit-font-smoothing: antialiased
 }
+
+.about {
+  font-family: "FreightDispProLight-Regular";
+  font-weight: 100;
+  font-size: 3.4em;
+  line-height: 1.1em;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+    position: relative;
+}
+
+.follow a, .contact a {
+  padding-right: 10px;
+}
+
+a {
+  color: #BABABA !important;
+  text-decoration: none;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+a:visited, a:hover, a:active  { 
+    color: #BABABA !important;
+}
+
+
+
+/*.about a {
+  font-family: "freight-big-pro",sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}*/
+
+.title {
+  margin-top: 3em;
+}
+
+.mark img {
+  position: absolute;
+  top: 0em;
+
+
+}
+
+
+.new-content, .new-content a{
+  font-family: "FreightDispProLight-Regular";
+  font-weight: 100;
+  font-style: italic;
+  font-size: 2.714rem;
+  color: #BABABA;
+}
+
+
+
+/*.digital {
+  background-image: url(../images/digital-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 2.5em;
+  display: inline-block;
+  text-align: center;
+  background-position: 50% 64%;
+  padding: 0 .17em;
+}*/
+
+.erase {
+  background-image: url(../images/erase.svg);
+  background-repeat: no-repeat;
+  background-size: 3.7em;
+  display: inline-block;
+  text-align: center;
+  background-position: 165% 75%;
+  width: 3.4em;
+}
+
+/*.visuals {
+  background-image: url(../images/visuals-bg.svg);
+background-repeat: no-repeat;
+background-size: 4.9em;
+display: inline-block;
+text-align: center;
+background-position: 28% 99%;
+padding: 0 .17em;
+}*/
+
+/*.digital-bg {
+  position: absolute;
+  right: 46em;
+  top: 24.5em;
+  z-index: -100;
+}
+
+.ui-bg {
+  position: absolute;
+  right: 84em;
+  top: 28em;
+  z-index: -100;
+}
+
+.visuals-bg {
+  position: absolute;
+  right: 75em;
+  top: 35.5em;
+  z-index: -100;
+}*/
+
+
+
+.tel {
+  margin: 0 .3em;
+}
+
+@media screen and (max-width: 400px) {
+
+
+.about {
+
+font-size: 2.3em;
+}
+
+
+/* Dan Burrows is a sen: */
+font-family: FreightDispProLight-Regular;
+font-size: 46px;
+color: #FFFFFF;
+letter-spacing: 0px;
+line-height: 53px;
