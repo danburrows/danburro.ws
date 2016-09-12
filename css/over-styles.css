@@ -1,0 +1,11 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.left {
+	background-color: red;
+}
+.right {
+	background-color: green;
+}
