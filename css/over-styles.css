@@ -66,6 +66,24 @@ p {
   margin-right: 2em;
 }
 
+.nav-bar {
+  -webkit-animation-duration: 90s;
+  -webkit-animation-delay: 1s;
+
+}
+
+.brand-bar {
+  -webkit-animation-duration: 90s;
+  -webkit-animation-delay: 2s;
+
+}
+
+.post {
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+
+}
+
 .brand img {
   position: fixed;
   top: 2.3em;
@@ -75,6 +93,8 @@ p {
 
 .intro {
   margin: 26.75em 0 6em 1.1em;
+  -webkit-animation-duration: 90s;
+  -webkit-animation-delay: 2s;
 }
 
 .intro a {
@@ -145,6 +165,8 @@ a:visited, a:hover, a:active  {
 
 .one {
     background-image: linear-gradient(-180deg, #F48949 0%, #F74931 100%);
+    -webkit-animation-duration: 9s;
+    -webkit-animation-delay: 2.2s;
 }
 
 .two {
@@ -152,9 +174,13 @@ a:visited, a:hover, a:active  {
 }
 
 .three {
+    background-image: linear-gradient(-180deg, #F48949 0%, #F74931 100%);
+
 }
 
 .four {
+   background-image: linear-gradient(-180deg, #579DFF 0%, #283C9F 98%);
+
 }
 
 .project-info {
@@ -205,4 +231,11 @@ margin: .2em 0 0 0;
 .about {
 
 font-size: 2.3em;
+}
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
 }

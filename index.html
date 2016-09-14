@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/over-styles.css" />
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/vendor/modernizr.js"></script>
   </head>
   <body>
+    
 
-<div class="row fullWidth" id="nav">
+<div class="row fullWidth nav-bar animated fadeInDown" id="nav">
     <div class="large-4 columns brand">
-      <img src="images/brand-bar.svg" alt="">
+      <img src="images/brand-bar.svg" class="brand-bar animated fadeIn" alt="">
       <p>Dan Burrows</p>
     </div>
     <div class="large-1 large-pull-0 columns menu-button">
@@ -26,25 +28,25 @@
 </div>
 
 <div class="row fullWidth">
-      <div class="large-9 large-push-1 columns intro">
+      <div class="large-9 large-push-1 columns intro animated fadeInUp">
         <h2 class="about">Dan Burrows is a senior designer based in Canterbury, United Kingdom, previously at <a href="http://www.etchapps.com">Etch</a> now <span class="erase">freelance</span> <a href="http://www.analogfolk.com" class="new-content">working at Analogfolk London.</a> He specialises in digital and user interface design, is passionate about typography, identity, and technology and loves creating stunning visuals.</h2>
       </div>         
 </div>  
 
 <!--project-->
 
-<div class="row fullWidth project one">
+<div class="row fullWidth project one animated fadeIn">
     <div class="large-4 large-push-1 columns project-info">
             <div class="row">
-                <div class="large-12 columns project-title"><h2>Hot Salvation Records</h2>
+                <div class="large-12 columns project-title post"><h2>Hot Salvation Records</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="large-12 columns"><p>Magna Dolor Lorem Fermentum Inceptos</p>
+                <div class="large-12 columns post"><p>Magna Dolor Lorem Fermentum Inceptos</p>
                 </div>
             </div>
             <div class="row">
-                <div class="large-6 columns"><a href="#" class="button large">View project</a>
+                <div class="large-6 columns"><a href="#" class="button large post">View project</a>
                 </div>
             </div>            
     </div>
@@ -61,21 +63,21 @@
 <div class="row fullWidth project two">
     <div class="large-4 large-push-1 columns project-info">
             <div class="row">
-                <div class="large-12 columns project-title"><h2>Hot Salvation Records</h2>
+                <div class="large-12 columns project-title post"><h2>Hot Salvation Records</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="large-12 columns"><p>Magna Dolor Lorem Fermentum Inceptos</p>
+                <div class="large-12 columns post"><p>Magna Dolor Lorem Fermentum Inceptos</p>
                 </div>
             </div>
             <div class="row">
-                <div class="large-6 columns"><a href="#" class="button large">View project</a>
+                <div class="large-6 columns post"><a href="#" class="button large">View project</a>
                 </div>
             </div>            
     </div>
     <div class="large-8 columns nopadding collapse">
-            <div class="image-crop">
-                <img src="images/bg-test.png" alt="">
+            <div class="image-crop post">
+                <img src="images/bg-test.png" class="project-image" alt="">
             </div>
           </div>
     </div>
@@ -84,22 +86,22 @@
 <!--project-->
 
 <div class="row fullWidth project three">
-    <div class="large-4 large-push-1 columns project-info">
+    <div class="large-4 large-push-1 columns project-info post">
             <div class="row">
-                <div class="large-12 columns project-title"><h2>Hot Salvation Records</h2>
+                <div class="large-12 columns project-title post"><h2>Hot Salvation Records</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="large-12 columns"><p>Magna Dolor Lorem Fermentum Inceptos</p>
+                <div class="large-12 columns post"><p>Magna Dolor Lorem Fermentum Inceptos</p>
                 </div>
             </div>
             <div class="row">
-                <div class="large-6 columns"><a href="#" class="button large">View project</a>
+                <div class="large-6 columns"><a href="#" class="button large post">View project</a>
                 </div>
             </div>            
     </div>
     <div class="large-8 columns nopadding collapse">
-            <div class="image-crop">
+            <div class="image-crop post">
                 <img src="images/bg-test.png" alt="">
             </div>
           </div>
@@ -111,20 +113,20 @@
 <div class="row fullWidth project four">
     <div class="large-4 large-push-1 columns project-info">
             <div class="row">
-                <div class="large-12 columns project-title"><h2>Hot Salvation Records</h2>
+                <div class="large-12 columns project-title post"><h2>Hot Salvation Records</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="large-12 columns"><p>Magna Dolor Lorem Fermentum Inceptos</p>
+                <div class="large-12 columns post"><p>Magna Dolor Lorem Fermentum Inceptos</p>
                 </div>
             </div>
             <div class="row">
-                <div class="large-6 columns"><a href="#" class="button large">View project</a>
+                <div class="large-6 columns"><a href="#" class="button large post">View project</a>
                 </div>
             </div>            
     </div>
     <div class="large-8 columns nopadding collapse">
-            <div class="image-crop">
+            <div class="image-crop post">
                 <img src="images/bg-test.png" alt="">
             </div>
           </div>
@@ -143,14 +145,27 @@
         <h1>Follow him on</h1>
         <p><a href="https://dribbble.com/danburrows">dribbble</a> <a href="http://drexelville.tumblr.com/">tumblr</a> <a href="https://twitter.com/burrowsdan">twitter</a> <a href="http://www.pinterest.com/burrowsdan/">pinterest</a></p>
       </div>           
-    </div> 
-
-
+    </div>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+
     <script>
       $(document).foundation();
+
     </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="js/jquery.viewportchecker.js"></script> 
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery('.post').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+            offset: 0    
+           });   
+    });            
+    </script>
+
   </body>
 </html>
