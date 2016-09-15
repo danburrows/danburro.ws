@@ -78,13 +78,14 @@ p {
 
 }
 
-.post {
+.fadeLoad {
   -webkit-animation-duration: 4s;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: .5s;
 
 }
 
 .brand img {
+  z-index: 2000;
   position: fixed;
   top: 2.3em;
   left: 1.9em;
@@ -239,3 +240,11 @@ font-size: 2.3em;
 .visible{
      opacity:1;
 }
+
+
+/*-------modal-------*/
+
+
+
+
+

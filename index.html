@@ -22,7 +22,7 @@
       <p>Dan Burrows</p>
     </div>
     <div class="large-1 large-pull-0 columns menu-button">
-      <p>menu</p>
+      <a id="" href=""><p>menu</p></a>
     </div>
 
 </div>
@@ -38,20 +38,20 @@
 <div class="row fullWidth project one animated fadeIn">
     <div class="large-4 large-push-1 columns project-info">
             <div class="row">
-                <div class="large-12 columns project-title post"><h2>Hot Salvation Records</h2>
+                <div class="large-12 columns project-title fadeLoad"><h2>Hot Salvation Records</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="large-12 columns post"><p>Magna Dolor Lorem Fermentum Inceptos</p>
+                <div class="large-12 columns fadeLoad"><p>Magna Dolor Lorem Fermentum Inceptos</p>
                 </div>
             </div>
             <div class="row">
-                <div class="large-6 columns"><a href="#" class="button large post">View project</a>
+                <div class="large-6 columns"><a href="#" class="button large fadeLoad">View project</a>
                 </div>
             </div>            
     </div>
     <div class="large-8 columns nopadding collapse">
-            <div class="image-crop">
+            <div class="image-crop fadeLoad">
                 <img src="images/bg-test.png" alt="">
             </div>
           </div>
@@ -63,20 +63,20 @@
 <div class="row fullWidth project two">
     <div class="large-4 large-push-1 columns project-info">
             <div class="row">
-                <div class="large-12 columns project-title post"><h2>Hot Salvation Records</h2>
+                <div class="large-12 columns project-title fadeLoad"><h2>Hot Salvation Records</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="large-12 columns post"><p>Magna Dolor Lorem Fermentum Inceptos</p>
+                <div class="large-12 columns fadeLoad"><p>Magna Dolor Lorem Fermentum Inceptos</p>
                 </div>
             </div>
             <div class="row">
-                <div class="large-6 columns post"><a href="#" class="button large">View project</a>
+                <div class="large-6 columns fadeLoad"><a href="#" class="button large">View project</a>
                 </div>
             </div>            
     </div>
     <div class="large-8 columns nopadding collapse">
-            <div class="image-crop post">
+            <div class="image-crop fadeLoad">
                 <img src="images/bg-test.png" class="project-image" alt="">
             </div>
           </div>
@@ -86,22 +86,22 @@
 <!--project-->
 
 <div class="row fullWidth project three">
-    <div class="large-4 large-push-1 columns project-info post">
+    <div class="large-4 large-push-1 columns project-info fadeLoad">
             <div class="row">
-                <div class="large-12 columns project-title post"><h2>Hot Salvation Records</h2>
+                <div class="large-12 columns project-title fadeLoad"><h2>Hot Salvation Records</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="large-12 columns post"><p>Magna Dolor Lorem Fermentum Inceptos</p>
+                <div class="large-12 columns fadeLoad"><p>Magna Dolor Lorem Fermentum Inceptos</p>
                 </div>
             </div>
             <div class="row">
-                <div class="large-6 columns"><a href="#" class="button large post">View project</a>
+                <div class="large-6 columns fadeLoad"><a href="#" class="button large">View project</a>
                 </div>
             </div>            
     </div>
     <div class="large-8 columns nopadding collapse">
-            <div class="image-crop post">
+            <div class="image-crop fadeLoad">
                 <img src="images/bg-test.png" alt="">
             </div>
           </div>
@@ -113,20 +113,20 @@
 <div class="row fullWidth project four">
     <div class="large-4 large-push-1 columns project-info">
             <div class="row">
-                <div class="large-12 columns project-title post"><h2>Hot Salvation Records</h2>
+                <div class="large-12 columns project-title fadeLoad"><h2>Hot Salvation Records</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="large-12 columns post"><p>Magna Dolor Lorem Fermentum Inceptos</p>
+                <div class="large-12 columns fadeLoad"><p>Magna Dolor Lorem Fermentum Inceptos</p>
                 </div>
             </div>
             <div class="row">
-                <div class="large-6 columns"><a href="#" class="button large post">View project</a>
+                <div class="large-6 columns"><a href="#" class="button large fadeLoad">View project</a>
                 </div>
             </div>            
     </div>
     <div class="large-8 columns nopadding collapse">
-            <div class="image-crop post">
+            <div class="image-crop fadeLoad">
                 <img src="images/bg-test.png" alt="">
             </div>
           </div>
@@ -147,25 +147,66 @@
       </div>           
     </div>
 
+
+    <!-- modal -->
+
+ <div class="row fullWidth">
+    <div class="large-11 large-push-1 columns title contact" id="menu-modal">
+    <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
+        <div  id="btn-close-modal" class="close-menu-modal"> 
+            CLOSE MODAL
+        </div>
+
+        <div class="modal-content">
+            <!--Your modal content goes here-->
+        </div>
+    </div>
+    </div>
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.viewportchecker.js"></script> 
 
     <script>
       $(document).foundation();
 
-    </script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
-    <script src="js/jquery.viewportchecker.js"></script> 
-    <script type="text/javascript">
     jQuery(document).ready(function() {
-        jQuery('.post').addClass("hidden").viewportChecker({
+        jQuery('.fadeLoad').addClass("hidden").viewportChecker({
             classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
             offset: 0    
            });   
     });            
     </script>
+
+    <script src="js/animatedModal.min.js"></script>
+        <script>
+
+            //demo 01
+            $("#demo01").animatedModal();
+
+            //demo 02
+            $("#demo02").animatedModal({
+                modalTarget:'modal-02',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+                // Callbacks
+                beforeOpen: function() {
+                    console.log("The animation was called");
+                },           
+                afterOpen: function() {
+                    console.log("The animation is completed");
+                }, 
+                beforeClose: function() {
+                    console.log("The animation was called");
+                }, 
+                afterClose: function() {
+                    console.log("The animation is completed");
+                }
+            });
+
+        </script>
+
 
   </body>
 </html>
