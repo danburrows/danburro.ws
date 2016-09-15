@@ -51,6 +51,17 @@ p {
   line-height: 1.5em;
 }
 
+li {
+  font-family: "FreightDispProLight-Regular";
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 1.1em;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+
+}
+
 
 #nav p {
   font-family: "FuturaPT-Heavy", sans-serif;
@@ -241,8 +252,6 @@ font-size: 2.3em;
      opacity:1;
 }
 
-
-/*-------modal-------*/
 
 
 
