@@ -6,27 +6,29 @@
 	top: 0;
 	left: 0;
 	background: #000000;
+	z-index: 30000;
 }
 
 /* Overlay closing cross */
 .overlay .overlay-close {
 	position: absolute;
-	right: 4.4rem;
-	top: 2.5rem;
-	border: none;
 	outline: none;
 	z-index: 100;
 }
 
 /* Menu style */
 .overlay nav {
+	font-family: "freight-big-pro", serif; 
+	font-weight: 300;
+	font-size: 7rem;
+	font-style: italic;
 	text-align: center;
 	position: relative;
 	top: 40%;
 	height: 60%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-}
+	}
 
 .overlay ul {
 	list-style: none;
@@ -47,13 +49,13 @@
 }
 
 .overlay ul li a {
-	font-size: 3rem;
+	font-size: 7rem;
 	font-weight: 300;
 	display: block;
-	color: #fff;
+	color: #9A9A9A;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
-	margin: 1em 0;
+	margin: .4em 0;
 	
 }
 

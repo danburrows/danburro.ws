@@ -27,15 +27,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: "futura-pt",sans-serif;
+  font-family: "futura-pt", serif;
   font-weight: 700;
   font-size: 1em;
 }
 
 h2 {
-  font-family: "FreightDispProLight-Regular";
-  font-weight: 100;
-  font-size: 3rem;
+  font-family: "freight-big-pro", serif; 
+  font-weight: 300;
+  font-size: 5rem;
   line-height: 1.1em;
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -43,23 +43,31 @@ h2 {
 }
 
 h3 {
-  font-family: "FreightDispProLight-Regular";
-  font-weight: 100;
-  font-size: 2em;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-size: .7rem;
   line-height: 1em;
   color: #fff;
 }
 
 p {
-  font-family: "FreightDispProLight-Regular";
-  font-weight: 100;
+  font-family: "freight-big-pro", sans-serif; 
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.5em;
 }
 
+.deets, .deets a, .deets span {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-size: .7rem;
+  line-height: 1.5em;
+  margin-right: .7rem; 
+}
+
 li {
-  font-family: "FreightDispProLight-Regular";
-  font-weight: 100;
+  font-family: "freight-big-pro", sans-serif; 
+  font-weight: 300;
   font-size: 3rem;
   line-height: 1.1em;
   text-rendering:optimizeLegibility;
@@ -75,12 +83,30 @@ li {
   font-size: 1rem;
   }
 
-.menu-button, {
-  font-family: "FuturaPT-Heavy", sans-serif;
-  font-weight: 700;
-  font-size
-  text-align: right;
-  margin-right: 2em;
+.say-hello {
+  font-family: "freight-big-pro", sans-serif; 
+  font-weight: 300;
+  font-size: 1.1rem;
+
+}
+
+.menu {
+  position: fixed;
+  right: 1em;
+  top: 0em;
+  z-index: 20000;
+  -webkit-animation-duration: 90s;
+  -webkit-animation-delay: 1s;
+}
+
+.button {
+  border-radius: 0;
+}
+
+.icon-menu, .icon-close {
+  width: 1rem;
+  height: 1rem;
+  margin-left: .5rem;
 }
 
 .nav-bar {
@@ -89,7 +115,7 @@ li {
 
 }
 
-.brand-bar {
+.brandbar {
   -webkit-animation-duration: 90s;
   -webkit-animation-delay: 2s;
 
@@ -110,13 +136,16 @@ li {
 }
 
 .intro {
-  margin: 26.75em 0 6em 1.1em;
-  -webkit-animation-duration: 90s;
-  -webkit-animation-delay: 2s;
+  margin: 10.75em 0 6em 0em;
 }
 
 .intro a {
   font-style: italic;
+}
+
+.about {
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 1s;
 }
 
 .column.nopadding {
@@ -157,8 +186,8 @@ a:visited, a:hover, a:active  {
 }
 
 .new-content, .new-content a{
-  font-family: "FreightDispProLight-Regular";
-  font-weight: 100;
+  font-family: "freight-big-pro", sans-serif; 
+  font-weight: 300;
   font-style: italic;
   color: #9A9A9A;
 }
@@ -205,7 +234,7 @@ a:visited, a:hover, a:active  {
 }
 
 .project-info p {
-  font-size: 1.2rem;
+  font-size: 1.66rem;
 }
 
 .project-title {
