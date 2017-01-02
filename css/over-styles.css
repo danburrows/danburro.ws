@@ -50,9 +50,23 @@ h3 {
   color: #fff;
 }
 
-p {
-  font-family: "freight-big-pro", sans-serif; 
+h4 {
+  font-family: "freight-big-pro", serif; 
   font-weight: 300;
+  font-size: 3rem;
+  line-height: 1.1em;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+h4.light-bg {
+  color: #000000;
+}
+
+p {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
   font-size: 1rem;
   line-height: 1.5em;
 }
@@ -78,10 +92,10 @@ li {
 
 
 #nav p, .overlay-close {
-  font-family: "FuturaPT-Heavy", sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  }
+}
 
 .say-hello {
   font-family: "freight-big-pro", sans-serif; 
@@ -103,9 +117,15 @@ li {
   border-radius: 0;
 }
 
-.icon-menu, .icon-close {
+.icon-menu, .icon-close{
   width: 1rem;
   height: 1rem;
+  margin-left: .5rem;
+}
+
+.icon-dash {
+  width: 1.5rem;
+  height: 1.6rem;
   margin-left: .5rem;
 }
 
@@ -136,7 +156,10 @@ li {
 }
 
 .intro {
-  margin: 10.75em 0 6em 0em;
+  margin: 10.75em 0em 6em 0em;
+  padding-right: 3em;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: .5s;
 }
 
 .intro a {
@@ -145,7 +168,7 @@ li {
 
 .about {
   -webkit-animation-duration: 9s;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 2s;
 }
 
 .column.nopadding {
@@ -184,12 +207,18 @@ a:visited, a:hover, a:active  {
   position: absolute;
   top: 0em;
 }
+.about-link-1 {
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 2.1s;
+}
 
-.new-content, .new-content a{
+.about-link-2, .about-link-2 a{
   font-family: "freight-big-pro", sans-serif; 
   font-weight: 300;
   font-style: italic;
   color: #9A9A9A;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 2.2s;
 }
 
 .erase {
@@ -200,53 +229,13 @@ a:visited, a:hover, a:active  {
   text-align: center;
   background-position: 48% 255%;
   width: 3.4em;
-}
-
-/*------- projects -------*/
-
-.project {
-  padding: 5em 0em;
-  margin-bottom: 3em;
-}
-
-.one {
-    background-image: linear-gradient(-180deg, #F48949 0%, #F74931 100%);
-    -webkit-animation-duration: 9s;
-    -webkit-animation-delay: 2.2s;
-}
-
-.two {
-    background-image: linear-gradient(-180deg, #579DFF 0%, #283C9F 98%);
-}
-
-.three {
-    background-image: linear-gradient(-180deg, #F48949 0%, #F74931 100%);
-
-}
-
-.four {
-   background-image: linear-gradient(-180deg, #579DFF 0%, #283C9F 98%);
-
-}
-
-.project-info {
-  padding: 19em 1em 1em 1em;
-}
-
-.project-info p {
-  font-size: 1.66rem;
-}
-
-.project-title {
-font-family: "FreightDispProLight-Regular";
-font-size: 3em;
-line-height: 4.4em;
-margin: .2em 0 0 0; 
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 2.15s;
 }
 
 .button.large {
   border: 1px #ffffff solid;
-  font-family: "FuturaPT-Heavy", sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   color: #ffffff;
@@ -260,8 +249,46 @@ margin: .2em 0 0 0;
   transition:.5s;
 }
 
+/*------- projects -------*/
+
+.project {
+  padding: 5em 0em 0em 0em;
+  margin-bottom: 3em;
+  background-color: #ffffff;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 2.2s;
+
+}
+
+.project-info {
+  padding: 19em 1em 1em 6em;
+}
+
+.project-info p {
+  font-size: 1rem;
+}
+
+
+
+.project-title {
+font-family: "FreightDispProLight-Regular";
+font-size: 3em;
+line-height: 4.4em;
+margin: .2em 0 1rem 0; 
+}
+
+
 .button a {
   color: #FFFFFF;
+}
+
+.light p, .light h4, .light a {
+  color: #000000;
+}
+
+.light .button.large {
+  color: #000000;
+  border: 1px #000000 solid;
 }
 
 /*------- footer -------*/

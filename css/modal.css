@@ -5,7 +5,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #000000;
+	background: #ffffff;
 	z-index: 30000;
 }
 
@@ -14,13 +14,15 @@
 	position: absolute;
 	outline: none;
 	z-index: 100;
+	color: #000000;
+    border: 1px #000000 solid;
 }
 
 /* Menu style */
 .overlay nav {
 	font-family: "freight-big-pro", serif; 
 	font-weight: 300;
-	font-size: 7rem;
+	font-size: 5rem;
 	font-style: italic;
 	text-align: center;
 	position: relative;
@@ -49,10 +51,10 @@
 }
 
 .overlay ul li a {
-	font-size: 7rem;
+	font-size: 5rem;
 	font-weight: 300;
 	display: block;
-	color: #9A9A9A;
+	color: #000000;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 	margin: .4em 0;
