@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+<!-- 	<script src="https://use.typekit.net/ltk8tay.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script> -->
+    <link rel="icon"  type="image/png"  href="../images/favicon.ico">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dan Burrows | Digital Designer</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" href="css/over-styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="https://use.typekit.net/bjy8kcd.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body class="">
+
+    <div class="row fullWidth nav-bar" id="nav">
+        <div class="small-4 small-offset-1 medium-3 medium-offset-0 large-4 columns brand animated fadeInDown">
+          <a href="index.html"><img src="images/brand-bar.svg" class="brandbar animated fadeInDown" alt=""></a>
+          <p><a href="index.html" class="logo">Dan Burrows</a></p>
+        </div>
+
+
+          <div class="large-3 columns animated fadeInDown">
+            <h1>Say hello</h1>
+            <a href="mailto:dan@danburro.ws?subject=Hello" class="deets">dan@danburro.ws</a> <span class="tel deets">(t) 07747 515058</span>
+          </div>
+          <div class="large-3 end columns animated fadeInDown">
+            <h1>Follow him on</h1>
+            <a href="https://dribbble.com/danburrows" class="deets" >dribbble</a> <a href="http://drexelville.tumblr.com/" class="deets">tumblr</a> <a href="https://twitter.com/burrowsdan" class="deets">twitter</a> <a href="http://www.pinterest.com/burrowsdan/" class="deets">pinterest</a></p>
+          </div>           
+        </div>
+
+
+
+            <p><button id="trigger-overlay" class="menu button large animated fadeIn" type="button">Menu<img class="icon-menu " src="images/icon-menu.svg"> </button></p>
+
+    </div>
+
+
+<div class="row fullWidth project project-header animated fadeInUp">
+    <div class="large-7 columns">
+
+            <div class="row">
+                <div class="large-12 columns"><h5>Magna Dolor Lorem Fermentum Inceptos &mdash;</h5>
+                </div>
+            </div>   
+
+            <div class="row">
+                <div class="large-12 columns project-title"><h4>Hot Salvation Records</h4>
+                </div>
+            </div>      
+    </div>
+    <div class="large-2 columns">
+
+            <div class="row">
+                <div class="large-12 columns"><h5>Client &mdash;</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns "><p>Hot Salvation</p>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="large-2 end columns">
+
+            <div class="row">
+                <div class="large-12 columns"><h5>Role &mdash;</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns "><p>Hot Salvation</p>
+                </div>
+            </div>
+
+    </div></div>
+
+
+<div class="row project-fullWidth-load hot-salvation-records animated fadeInUp" style="height: 700px">
+  
+
+
+</div>
+
+
+    <!-- modal -->
+
+    <div class="overlay overlay-slidedown"> 
+            <button type="button-overlay" class="overlay-close menu button large">Close <img class="icon-close" src="images/icon-close.svg"></button>
+            <nav>
+                <ul class="nav">
+                    <li><a href="work.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+   
+
+    <script src="js/classie.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/jquery.viewportchecker.js"></script> 
+
+    <script>
+      $(document).foundation();
+
+    jQuery(document).ready(function() {
+        jQuery('.fadeLoad').addClass("hidden").viewportChecker({
+            classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+            offset: 0    
+           });   
+    });            
+    </script>
+
+    <script src="js/animatedModal.min.js"></script>
+        <script>
+
+            //demo 01
+            $("#demo01").animatedModal();
+
+            //demo 02
+            $("#demo02").animatedModal({
+                modalTarget:'modal-02',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOutDown',
+                color:'#3498db',
+                // Callbacks
+                beforeOpen: function() {
+                    console.log("The animation was called");
+                },           
+                afterOpen: function() {
+                    console.log("The animation is completed");
+                }, 
+                beforeClose: function() {
+                    console.log("The animation was called");
+                }, 
+                afterClose: function() {
+                    console.log("The animation is completed");
+                }
+            });         
+
+        </script>
+
+        <script>
+             var $brandbar = $('.brandbar'),
+                $body = $(document.body),
+                bodyHeight = $body.height();
+
+            $(window).scroll(function () {
+                $brandbar.css({
+                    'transform': 'rotate(' + ($body.scrollTop() / bodyHeight * 360) + 'deg)'
+                });
+            });  
+        </script>
+
+
+  </body>
+</html>

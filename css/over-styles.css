@@ -4,7 +4,6 @@ body {
   background-color: #000;
   color: #fff;
   font-size: 12px;
-  padding: 3em 0 0 6em;
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -79,6 +78,10 @@ p {
   margin-right: .7rem; 
 }
 
+.deets-pull-left {
+    margin-right: -.7rem; 
+}
+
 li {
   font-family: "freight-big-pro", sans-serif; 
   font-weight: 300;
@@ -132,12 +135,14 @@ li {
 .nav-bar {
   -webkit-animation-duration: 90s;
   -webkit-animation-delay: 1s;
+    padding: 3em 0 0 6em;
+
 
 }
 
 .brandbar {
   -webkit-animation-duration: 90s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 1s;
 
 }
 
@@ -156,10 +161,8 @@ li {
 }
 
 .intro {
-  margin: 10.75em 0em 6em 0em;
-  padding-right: 3em;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-delay: .5s;
+  margin: 10.75em 0 6em 0;
+  padding: 0 3em 0 6em;
 }
 
 .intro a {
@@ -168,7 +171,7 @@ li {
 
 .about {
   -webkit-animation-duration: 9s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 1.5s;
 }
 
 .column.nopadding {
@@ -199,9 +202,6 @@ a:visited, a:hover, a:active  {
     color: #9A9A9A;
 }
 
-.image-crop {
-  float:right;
-}
 
 .mark img {
   position: absolute;
@@ -233,6 +233,28 @@ a:visited, a:hover, a:active  {
   -webkit-animation-delay: 2.15s;
 }
 
+.small-link {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-size: .7rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  position: absolute;
+
+}
+
+.icon-chevron{
+  width: .7rem;
+  height: .7rem;
+  margin-left: -.1rem;
+}
+
+.small-link a{
+  color: #9A9A9A;
+  border-bottom: 1px #9A9A9A solid;
+  padding-bottom: 3px;
+}
+
 .button.large {
   border: 1px #ffffff solid;
   font-family: "futura-pt", sans-serif;
@@ -252,43 +274,89 @@ a:visited, a:hover, a:active  {
 /*------- projects -------*/
 
 .project {
-  padding: 5em 0em 0em 0em;
-  margin-bottom: 3em;
-  background-color: #ffffff;
   -webkit-animation-duration: 9s;
   -webkit-animation-delay: 2.2s;
+  background-size: cover;                 
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
+.project-fullWidth-load {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+  padding-left: -6em;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 1.55s;
 }
 
 .project-info {
   padding: 19em 1em 1em 6em;
 }
 
-.project-info p {
-  font-size: 1rem;
+.project-header {
+  margin: 16rem 0 6em 0;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 1.5s;
+  padding-left: 6em;
 }
 
+.project-info p, h5 {
+  font-size: 1rem;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+}
 
+.project-header p {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  font-size: .7rem;
+  padding-bottom: 1em;
+}
 
 .project-title {
-font-family: "FreightDispProLight-Regular";
+font-family: "freight-big-pro", sans-serif; 
+font-weight: 300;
 font-size: 3em;
 line-height: 4.4em;
 margin: .2em 0 1rem 0; 
 }
 
+.project .button.large {
+  font-size: 0.8rem;
+  padding: 1.3rem 2rem 1.4rem 2rem ;
+
+
+}
+
+.project img {
+float: right;
+}
 
 .button a {
   color: #FFFFFF;
 }
 
-.light p, .light h4, .light a {
+.light p, .light h2,.light h4, .light h3, .light a, .light.tel {
   color: #000000;
+}
+
+.nav-bar a {
+  color: #9A9A9A;
+}
+
+a.logo {
+color: #ffffff;
 }
 
 .light .button.large {
   color: #000000;
   border: 1px #000000 solid;
+}
+
+.hot-salvation-records {
+  background-color: #dad7d7;
 }
 
 /*------- footer -------*/
