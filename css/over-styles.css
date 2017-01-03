@@ -65,7 +65,7 @@ h4.light-bg {
 
 p {
   font-family: "futura-pt", sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.5em;
 }
@@ -281,12 +281,12 @@ a:visited, a:hover, a:active  {
   background-position: center center;
 }
 
-.project-fullWidth-load {
+.project-fullWidth {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   max-width: initial;
-  padding-left: -6em;
+  padding: 12em 6em 0em 6em;
   -webkit-animation-duration: 9s;
   -webkit-animation-delay: 1.55s;
 }
@@ -305,14 +305,7 @@ a:visited, a:hover, a:active  {
 .project-info p, h5 {
   font-size: 1rem;
   font-family: "futura-pt", sans-serif;
-  font-weight: 300;
-}
-
-.project-header p {
-  font-family: "futura-pt", sans-serif;
   font-weight: 700;
-  font-size: .7rem;
-  padding-bottom: 1em;
 }
 
 .project-title {
@@ -321,6 +314,16 @@ font-weight: 300;
 font-size: 3em;
 line-height: 4.4em;
 margin: .2em 0 1rem 0; 
+}
+
+.project-category p {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+
+}
+
+.project-details {
+  margin-bottom: 3em;
 }
 
 .project .button.large {
@@ -338,12 +341,19 @@ float: right;
   color: #FFFFFF;
 }
 
-.light p, .light h2,.light h4, .light h3, .light a, .light.tel {
+.light p, .light h2,.light h4, .light h3, .light h5,.light a, .light.tel {
   color: #000000;
+
 }
+
+.light p{
+  font-weight: 300;
+}
+
 
 .nav-bar a {
   color: #9A9A9A;
+  z-index: 2000;
 }
 
 a.logo {
@@ -357,6 +367,10 @@ color: #ffffff;
 
 .hot-salvation-records {
   background-color: #dad7d7;
+}
+
+.magicseaweed {
+  background-image: url(../images/magicseaweed/wave-2.jpg);
 }
 
 /*------- footer -------*/
