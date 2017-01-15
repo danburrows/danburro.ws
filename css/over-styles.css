@@ -6,6 +6,7 @@ body {
   font-size: 12px;
   text-rendering:optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
 }
 
 @media screen and (max-width: 734px) {
@@ -21,8 +22,31 @@ body {
    max-width: initial;
 }
 
+.fullWidth-left {
+   width: 100%;
+   margin-left: auto;
+   margin-right: 6em;
+   max-width: initial;
+}
+
+.fullWidth-right {
+   width: 100%;
+   margin-left: 6em;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.fullWidth-inset {
+   width: 100%;
+   margin-left: 6em;
+   margin-right: 6em;
+   max-width: initial;
+}
+
+
+
 .block {
-  margin: 15em 0;
+  margin-top: 15em;
 }
 
 img {
@@ -293,10 +317,10 @@ a:visited, a:hover, a:active  {
 }
 
 .project-fullWidth {
-  width: 100%;
+/*  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: initial;
+  max-width: initial;*/
 -webkit-animation-duration: 9s;
   -webkit-animation-delay: 1.55s;
 }
@@ -336,7 +360,7 @@ hr {
 }
 
 .project {
-  padding: 6em 0;
+  padding: 6em;
 }
 
 .project-info {
@@ -344,11 +368,9 @@ hr {
 }
 
 .project-header {
-  margin: 16rem 0 6em 0;
+  margin: 24rem 0 0 0;
   -webkit-animation-duration: 9s;
-  -webkit-animation-delay: 1.5s;
-  padding-left: 6em;
-}
+  -webkit-animation-delay: 1.5s;}
 
 .project-info p, h5 {
   font-size: 1rem;
@@ -423,8 +445,13 @@ color: #ffffff;
   border: 1px #000000 solid;
 }
 
-.hot-salvation-records {
-background-color: #000000;
+
+header {
+    padding: 0 0 4em 0;
+}
+
+header.hot-salvation-records {
+background-image: linear-gradient(-180deg, #FCA0B5 2%, #476EFA 97%);
 }
 
 .hs-logos{
