@@ -11,11 +11,15 @@
 
 /* Overlay closing cross */
 .overlay .overlay-close {
+	font-family: "futura-pt", sans-serif;
+	font-weight: 700;
 	position: absolute;
 	outline: none;
 	z-index: 100;
 	color: #000000;
-    border: 1px #000000 solid;
+	border: 1px solid #000000;
+	padding: 1.4em 3.5em;
+	font-size: 1rem;
 }
 
 /* Menu style */
