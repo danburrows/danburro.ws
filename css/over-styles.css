@@ -1,5 +1,5 @@
 body {
-  font-family: "freight-big-pro", sans-serif;
+  font-family: "FreightBigProLight-Regular", sans-serif;
   background-color: #000;
   color: #fff;
   font-size: 12px;
@@ -43,17 +43,35 @@ body {
 
 h1 {
   font-size: 6rem;
-  line-height: 1.1em;
-  font-family: "freight-big-Pro", sans-serif;
+  line-height: 6rem;
+  font-family: "FreightBigProLight-Regular", serif;
   font-weight: 400;
 }
 
-p {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 700;
-  font-size: .7rem;
-  line-height: 1.5em; 
+h2 {
+  font-size: 4rem;
+  line-height: 3.5rem;
+  font-family: "FreightBigProLight-Regular", serif;
+  font-weight: 400;
 }
+
+h5 {
+  font-size: .9rem;
+  line-height: 1.5rem;
+  font-family: "FuturaPT-Heavy", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+
+p {
+  font-family: "FreightBigProLight-Regular", serif;
+  font-weight: 400;
+  font-size: .7rem;
+  line-height: 1.5r em; 
+}
+
+
 
 a {
   color: #ffffff;
@@ -76,6 +94,8 @@ a:visited, a:active  {
 
 
 a .button.large {
+  font-family: "FuturaPT-Heavy", sans-serif;
+  font-weight: 700;
   opacity: 1;
   border: 1px solid #ffffff;
   border-radius: 0;
@@ -98,9 +118,8 @@ a .button.large {
 
 
 #nav p, #nav a, .tel {
-  font-family: "futura-pt", sans-serif;
+  font-family: "FuturaPT-Heavy", sans-serif;
   font-weight: 700;
-  font-size: .7rem;
   line-height: 1.5em;
   font-size: 1em;
   line-height: 0;
@@ -155,7 +174,7 @@ img.logo{
 }
 
 .logotype {
-  font-family: "futura-pt", sans-serif;
+  font-family: "FuturaPT-Heavy", sans-serif;
   font-weight: 700;
   font-size: 1rem;
 
@@ -168,8 +187,8 @@ h1.about {
 }
 
 .about a {
+  font-family: "FreightBigProLight-Italic", serif;
   opacity: 0.5;
-  font-style: italic;
 }
 
 .about a:hover {
@@ -178,7 +197,7 @@ h1.about {
 }
 
 .small-link a {
-  font-family: "futura-pt", sans-serif;
+  font-family: "FuturaPT-Heavy", sans-serif;
   font-weight: 700;
   font-size: .9rem;
   color: #ffffff;
@@ -194,7 +213,20 @@ h1.about {
 }
 
 .erase {
-  background-image: url(../images/erase.svg);
+    background-image: url(../images/erase.svg);
+    background-repeat: no-repeat;
+    background-size: 2.2em;
+    display: inline-block;
+    text-align: center;
+    background-position: 48% 10px;
+    width: 2.1em;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 2.15s;
+}
+
+.circle {
+  {
+    background-image: url(../images/circle.svg);
     background-repeat: no-repeat;
     background-size: 2.2em;
     display: inline-block;
@@ -214,17 +246,72 @@ h1.about {
 }
 
 .project-card .details {
-  padding-top: 12rem;
+  padding-top: 8rem;
+}
+
+.details p {
+
 }
 
 .project-header h1{
-  font-size: 4rem;
+  font-size: 7rem;
   padding: 30rem 0 6rem 0;
 }
 
-.project-header.hot-salvation-records {
+.project-header.magicseaweed, .project-card.magicseaweed{
+  background-image: url(../images/magicseaweed/header-image.jpg);
+  background-size: cover;
+}
+
+.project-header.hot-salvation-records, .project-card.hot-salvation-records{
   background-image: url(../images/hot-salvation-records/header-image.jpg);
   background-size: cover;
+}
+
+.project-header.plymouth-gin-home, .project-card.plymouth-gin-home{
+  background-image: url(../images/plymouth-gin-home/plymouth-gin-header-bg.jpg);
+  background-size: cover;
+}
+
+.project-header.plymouth-gin-blog, .project-card.plymouth-gin-blog{
+  background-image: url(../images/plymouth-gin-blog/header-image.jpg);
+  background-size: cover;
+}
+
+.hot-grad {
+background-image: linear-gradient(-180deg, #FFFFFF 0%, #FC9AB0 42%, #476EFA 97%);
+}
+
+.icons p {
+  text-align: center;
+  font-family: "FuturaPT-Heavy", sans-serif;
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.project-header.lucozade-made-to-move, .project-card.lucozade-made-to-move{
+  background-image: url(../images/lucozade-made-to-move/header-image.jpg);
+  background-size: cover;
+}
+
+.lucozade-home {
+  background-image: url(../images/lucozade-made-to-move/home-bg-2.jpg);
+background-size: cover;
+}
+
+.project-header.dulux-customisation, .project-card.dulux-customisation{
+  background-image: url(../images/dulux-customisation/header-image.jpg);
+  background-size: cover;
+}
+
+.dulux-white {
+  background-color: #ffffff;
+  color: #0A226A;
+}
+
+.dulux-customisation {
+  background-color: #0A226A;
 }
 
 .project-header.magicseaweed {
@@ -232,28 +319,84 @@ h1.about {
   background-size: cover;
 }
 
-.project-header.hello-hair {
+.project-header.hello-hair, .project-card.hello-hair{
   background-image: url(../images/hello-hair/header-image.jpg);
   background-size: cover;
 }
 
-.project-card.hot-salvation-records{
-  background-image: linear-gradient(-180deg, #FFFFFF 0%, #FC9AB0 42%, #476EFA 97%);
+.hello-hair.brand {
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #07FF00 59%);
+}
+
+.hello-hair.brand h5, .hello-hair.brand p {
+  color: #000000;
+}
+
+.hello-hair hr {
+  border-top: 1px solid rgba(0, 0, 0, .4);
+
+}
+
+.hello-hair.logo-dev {
+  background-color: #07FF00;
+  color: #000000;
+}
+
+.hello-hair.brand .info {
+  margin-top: 30rem;
 }
 
 #project-details {
   padding-top: 6rem;
-  padding-bottom: 10em;
+  padding-bottom: 16em;
 
+}
+
+#project-details p {
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  font-family: "FreightBigProLight-Regular", serif;
+  font-weight: 400;
 }
 
 .title.hot-salvation-records img {
   padding-top: 12em;
 }
 
-.blurb {
-padding-top: 10rem;
-padding-bottom: 10rem;
+.brand-detail {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.brand-detail p {
+  font-size: 1.5rem;
+}
+
+.lucozade-made-to-move {
+  color: #000000;
+  background-color: #FBC700;
+}
+
+.section {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.section-bottom {
+  padding-bottom: 12rem;
+
+}
+
+.section-top {
+  padding-top: 12rem;
+}
+
+.section p {
+  font-size: 4rem;
+  line-height: 1.2em;
+}
+
+.info p {
+  font-size: 1.5rem;
 }
 
 hr {
@@ -262,10 +405,21 @@ hr {
     margin-right: 6em; 
     border: 0;
     height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 9em;
+    margin-bottom: 9em;
+}
+
+.dulux hr {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-/*    margin-top: 10em;
-    margin-bottom: 10em;*/
+    border-bottom: 1px solid rgba(10, 34, 106, 0.3);
+
+}
+
+.bleed img {
+  width: 100%;
+  height: auto;
+
 }
 
 .verticle-offset.hot-salvation-records {
@@ -289,10 +443,6 @@ hr {
 .shift-up {
   margin-top:-20rem;
 }
-
-
-
-
 
 
 
