@@ -218,24 +218,21 @@ h1.about {
     background-size: 2.2em;
     display: inline-block;
     text-align: center;
-    background-position: 48% 10px;
+    background-position: 48% -1px;
     width: 2.1em;
   -webkit-animation-duration: 9s;
   -webkit-animation-delay: 2.15s;
 }
 
 .circle {
-  {
     background-image: url(../images/circle.svg);
     background-repeat: no-repeat;
-    background-size: 2.2em;
+    background-size: 3.8em;
     display: inline-block;
     text-align: center;
-    background-position: 48% 10px;
-    width: 2.1em;
-  -webkit-animation-duration: 9s;
-  -webkit-animation-delay: 2.15s;
-}
+    background-position: 48% -6px;
+    width: 22.4rem;
+  }
 
 
 /*--projects--*/
@@ -245,12 +242,12 @@ h1.about {
 
 }
 
-.project-card .details {
-  padding-top: 8rem;
+.details {
+  margin-top: 15rem;
 }
 
-.details p {
-
+.details h2 {
+  margin: 2rem 0;
 }
 
 .project-header h1{
