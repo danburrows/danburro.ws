@@ -41,12 +41,37 @@ body {
    max-width: initial;
 }
 
+@media (max-width: 550px) {
+.fullWidth-inset {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.fullWidth-left {
+  padding-left: 2em;
+}
+
+}
+
 h1 {
   font-size: 6rem;
   line-height: 6rem;
   font-family: "FreightBigProLight-Regular", serif;
   font-weight: 400;
 }
+
+@media (max-width: 1040px) {
+  h1 {  font-size: 4rem;
+        line-height: 4rem;
+}
+}
+
+@media (max-width: 500px) {
+  h1 {  font-size: 3rem;
+        line-height: 3rem;
+}
+}
+
 
 h2 {
   font-size: 4rem;
@@ -68,7 +93,7 @@ p {
   font-family: "FreightBigProLight-Regular", serif;
   font-weight: 400;
   font-size: .7rem;
-  line-height: 1.5r em; 
+  line-height: 2rem; 
 }
 
 
@@ -144,12 +169,18 @@ a .button.large {
   width: 100%;
 }
 
+@media (max-width: 642px) {
+  .nav-details { display: none;
+}
+}
+
 .menu {
   top: 1em;
   right: 1em;
   -webkit-animation-duration: 90s;
   -webkit-animation-delay: 1s;
 }
+
 
 .logo {
   top: 2.1em;
@@ -177,7 +208,11 @@ img.logo{
   font-family: "FuturaPT-Heavy", sans-serif;
   font-weight: 700;
   font-size: 1rem;
+}
 
+@media (max-width: 550px) {
+  .logotype { padding-left: 3rem;
+}
 }
 
 /*--about--*/
@@ -234,6 +269,19 @@ h1.about {
     width: 22.4rem;
   }
 
+  @media (max-width: 1040px) {
+    .circle {
+      width: 15.4rem;
+  }
+  }
+
+    @media (max-width: 503px) {
+    .circle {
+      width: 11rem;
+  }
+  }
+
+
 
 /*--projects--*/
 
@@ -246,6 +294,12 @@ h1.about {
   margin-top: 15rem;
 }
 
+ @media (max-width: 503px) {
+  .details {
+    margin-top: 0;
+}
+}
+
 .details h2 {
   margin: 2rem 0;
 }
@@ -253,6 +307,21 @@ h1.about {
 .project-header h1{
   font-size: 7rem;
   padding: 30rem 0 6rem 0;
+}
+
+@media (max-width: 1040px) {
+  .project-header h1 {  font-size: 4rem;
+        line-height: 5rem;
+        padding: 5rem 0 2rem 0;
+}
+}
+
+@media (max-width: 500px) {
+  .project-header h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 5rem 0 2rem 0;
+}
 }
 
 .project-header.magicseaweed, .project-card.magicseaweed{
@@ -297,7 +366,7 @@ background-image: linear-gradient(-180deg, #FFFFFF 0%, #FC9AB0 42%, #476EFA 97%)
 background-size: cover;
 }
 
-.project-header.dulux-customisation, .project-card.dulux-customisation{
+.project-header.dulux-customisation {
   background-image: url(../images/dulux-customisation/header-image.jpg);
   background-size: cover;
 }
@@ -311,9 +380,17 @@ background-size: cover;
   background-color: #0A226A;
 }
 
-.project-header.magicseaweed {
+/*.project-header.magicseaweed {
   background-image: url(../images/magicseaweed/header-image.jpg);
   background-size: cover;
+}*/
+
+.magicseaweed.section {
+  margin-top: 12rem;
+}
+
+.magicseaweed, .project-card.magicseaweed, .project-header.magicseaweed {
+  background-image: linear-gradient(-191deg, #88BE9A 1%, #128AAC 90%);
 }
 
 .project-header.hello-hair, .project-card.hello-hair{
@@ -343,6 +420,10 @@ background-size: cover;
   margin-top: 30rem;
 }
 
+.detail.info {
+  margin-top: 5rem;
+}
+
 #project-details {
   padding-top: 6rem;
   padding-bottom: 16em;
@@ -350,11 +431,21 @@ background-size: cover;
 }
 
 #project-details p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-right: 2rem;
   font-family: "FreightBigProLight-Regular", serif;
   font-weight: 400;
 }
+
+@media (max-width: 1025px){
+#project-details p {
+  margin-bottom: 4rem;
+}
+#project-details {
+    padding-bottom: 2em;
+}
+}
+
 
 .title.hot-salvation-records img {
   padding-top: 12em;
@@ -364,9 +455,19 @@ background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
+
+
+@media (max-width: 1023px){
+.brand-detail {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+}
+
 .brand-detail p {
   font-size: 1.5rem;
 }
+
 
 .lucozade-made-to-move {
   color: #000000;
@@ -392,8 +493,14 @@ background-size: cover;
   line-height: 1.2em;
 }
 
+@media (max-width: 500px){
+.section p {
+  font-size: 3rem;
+}
+}
+
 .info p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 hr {
@@ -455,4 +562,8 @@ hr {
 
 
 
-
+@media (max-width: 611px) {
+  .menu.button.large { border: 0px;
+          padding: 1.4em .5em;
+}
+}
