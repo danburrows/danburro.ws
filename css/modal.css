@@ -2,10 +2,10 @@
 .overlay {
 	position: fixed;
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	top: 0;
 	left: 0;
-	background: #ffffff;
+	background: #000000;
 	z-index: 30000;
 }
 
@@ -16,25 +16,31 @@
 	position: absolute;
 	outline: none;
 	z-index: 100;
-	color: #000000;
-	border: 1px solid #000000;
+	color: #ffffff;
+	border: 1px solid #ffffff;
 	padding: 1.4em 3.5em;
 	font-size: 1rem;
+	border-radius: 0;
 }
+
 
 /* Menu style */
 .overlay nav {
-	font-family: "freight-big-pro", serif; 
-	font-weight: 300;
-	font-size: 5rem;
-	font-style: italic;
-	text-align: center;
+  font-family: "FreightBigProLight-Regular", serif;
+  font-weight: 400;
 	position: relative;
-	top: 40%;
-	height: 60%;
+	height: 55%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
+	top: 7rem;
+    margin-left: 4.4rem;
 	}
+
+@media (max-width: 500px){
+	.overlay nav {
+    margin-left: 2rem;
+	}
+}
 
 .overlay ul {
 	list-style: none;
@@ -52,22 +58,44 @@
 	min-height: 54px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+    margin-bottom: 0.5rem;
 }
 
 .overlay ul li a {
-	font-size: 5rem;
-	font-weight: 300;
+	font-size: 3rem;
+	font-weight: 400;
 	display: block;
-	color: #000000;
+	color: #ffffff;
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
-	margin: .4em 0;
+		  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
 	
 }
 
-.overlay ul li a:hover,
-.overlay ul li a:focus {
-	color: #9A9A9A;
+
+.inactive { 
+	font-size: 3rem;
+	font-weight: 300;
+	opacity: 0.5;
+}
+
+.inactive::after {
+	content: url(../images/circle-inactive.svg);
+    position: absolute;
+    top: 5.3rem;
+    left: -11.5rem;
+    display: inline-block;
+	transform: scale(.5);
+  }
+
+}
+
+.overlay a:hover,
+.overlay a:focus {
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
@@ -75,25 +103,22 @@
 	transition:.5s;
 }
 
-.overlay ul li a:active {
-	font-style: italic;
-}
 
 /* Effects */
 .overlay-slidedown {
 	visibility: hidden;
 	-webkit-transform: translateY(-100%);
 	transform: translateY(-100%);
-	-webkit-transition: -webkit-transform 0.9s ease-in-out, visibility 0s 0.9s;
-	transition: transform 0.4s ease-in-out, visibility 0s 0.9s;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out, visibility 0s 0.5s;
+	transition: transform 0.5s ease-in-out, visibility 0s 0.5s;
 }
 
 .overlay-slidedown.open {
 	visibility: visible;
 	-webkit-transform: translateY(0%);
 	transform: translateY(0%);
-	-webkit-transition: -webkit-transform 0.9s ease-in-out;
-	transition: transform 0.9s ease-in-out;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 }
 
 @media screen and (max-height: 30.5em) {
