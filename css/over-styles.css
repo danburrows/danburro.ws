@@ -418,7 +418,7 @@ background-image: linear-gradient(-180deg, #FFFFFF 0%, #FC9AB0 42%, #476EFA 97%)
 background-size: cover;
 }
 
-.project-header.dulux-customisation {
+.project-header.dulux-customisation, .project-card.dulux-customisation {
   background-image: url(../images/dulux-customisation/header-image.jpg);
   background-size: cover;
 }
@@ -438,10 +438,10 @@ background-size: cover;
   }
 }
 
-/*.project-header.magicseaweed {
-  background-image: url(../images/magicseaweed/header-image.jpg);
+.project-header.magicseaweed, .project-card.magicseaweed {
+  background-image: url(../images/magicseaweed/bg.jpg);
   background-size: cover;
-}*/
+}
 
 .magicseaweed.section {
   margin-top: 12rem;
@@ -454,7 +454,7 @@ background-size: cover;
 }
 
 
-.magicseaweed, .project-card.magicseaweed, .project-header.magicseaweed {
+.magicseaweed {
   background-image: linear-gradient(-191deg, #88BE9A 1%, #128AAC 90%);
 }
 
