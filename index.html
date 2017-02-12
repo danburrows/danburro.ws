@@ -14,8 +14,16 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/vendor/modernizr.js"></script>
-    <script src="https://use.typekit.net/bjy8kcd.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'bjy8kcd',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
   </head>
   <body>
 
@@ -33,7 +41,7 @@
 
 <div class="row fullWidth-inset" id="nav">
 
-      <div class="small-10 large-2 medium-2 columns animated fadeInDown logotype">
+      <div class="small-10 large-3 medium-2 columns animated fadeInDown logotype">
         <a href="index.html">Dan Burrows</a>
       </div>
 
@@ -42,9 +50,9 @@
         <a href="mailto:dan@danburro.ws?subject=Hello">dan@danburro.ws</a> <span class="tel">(t)&nbsp;07747&nbsp;515058</span>
       </div>
 
-      <div class="small-3 end columns animated fadeInDown nav-details">
+      <div class="small-3 small-offset-1 end columns animated fadeInDown nav-details">
         <p>Follow:</p>
-        <a href="https://dribbble.com/danburrows">dribbble</a> <a href="http://drexelville.tumblr.com/">tumblr</a> <a href="https://twitter.com/burrowsdan">twitter</a></p>
+        <a href="https://dribbble.com/danburrows">dribbble</a> <a href="http://zone-d.tumblr.com/">tumblr</a> <a href="https://twitter.com/burrowsdan">twitter</a></p>
       </div> 
 
 </div>
@@ -62,7 +70,7 @@
 
 <div class="row fullWidth-left project-card hot-salvation-records">
     <div class="small-12 large-4 columns details">
-        <h5 class="fadeLoad">Magna Dolor Lorem Fermentum Inceptos &mdash;</h5>
+        <h5 class="fadeLoad">Visual Identity, Ecommerce&nbsp;&mdash;</h5>
         <h2 class="fadeLoad">Hot Salvation Records</h4>
         <a href="hot-salvation-records.html"><p class="button large fadeLoad">View project<p></a>
     </div>
@@ -75,7 +83,7 @@
 
 <div class="row fullWidth-left project-card hello-hair ">
     <div class="small-12 large-4 columns details">
-        <h5 class="fadeLoad">Magna Dolor Lorem Fermentum Inceptos &mdash;</h5>
+        <h5 class="fadeLoad">Visual Identity, Website Concept&nbsp;&mdash;</h5>
         <h2 class="fadeLoad">Hello Hair Salon</h4>
         <a href="hello-hair.html"><p class="button large fadeLoad">View project<p></a>
     </div>
@@ -87,7 +95,7 @@
 <!--magicseaweed-->
 <div class="row fullWidth-left project-card magicseaweed">
     <div class="small-12 large-4 columns details">
-        <h5 class="fadeLoad">Magna Dolor Lorem Fermentum Inceptos &mdash;</h5>
+        <h5 class="fadeLoad">iOS App, Logo Redesign&nbsp;&mdash;</h5>
         <h2 class="fadeLoad">Magicseaweed</h4>
         <a href="magicseaweed.html"><p class="button large fadeLoad">View project<p></a>
     </div>
@@ -99,7 +107,7 @@
 <!--lucozade-->
 <div class="row fullWidth-left project-card lucozade-home">
     <div class="small-12 large-4 columns details">
-        <h5 class="fadeLoad">Magna Dolor Lorem Fermentum Inceptos &mdash;</h5 >
+        <h5 class="fadeLoad">Web Design, Social Media&nbsp;&mdash;</h5 >
         <h2 class="fadeLoad">Made to Move Sessions</h4>
         <a href="lucozade-made-to-move.html"><p class="button large fadeLoad">View project<p></a>
     </div>
@@ -111,7 +119,7 @@
 <!--plymouth home-->
 <div class="row fullWidth-left project-card plymouth-gin-home">
     <div class="small-12 large-4 columns details">
-        <h5 class="fadeLoad">Magna Dolor Lorem Fermentum Inceptos &mdash;</h5>
+        <h5 class="fadeLoad">Web Design, Visual Identity, Brand Book</h5>
         <h2 class="fadeLoad">The home Plymouth Gin</h2>
         <a href="plymouth-gin-home.html"><p class="button large fadeLoad">View project<p></a>
     </div>
@@ -123,7 +131,7 @@
 <!--dulux-->
 <div class="row fullWidth-left project-card dulux-customisation">
     <div class="small-12 large-4 columns details">
-        <h5 class="fadeLoad">Magna Dolor Lorem Fermentum Inceptos &mdash;</h5>
+        <h5 class="fadeLoad">Web Design, Icon Design&nbsp;&mdash;</h5>
         <h2 class="fadeLoad">Dulux Customisation</h4>
         <a href="dulux-customisation.html"><p class="button large fadeLoad">View project<p></a>
     </div>
@@ -135,7 +143,7 @@
 <!--plymouth blog-->
 <div class="row fullWidth-left project-card plymouth-gin-blog">
     <div class="small-12 large-4 columns details">
-        <h5 class="fadeLoad">Magna Dolor Lorem Fermentum Inceptos &mdash;</h5>
+        <h5 class="fadeLoad">Web Design&nbsp;&mdash;</h5>
         <h2 class="fadeLoad">Ports of Call</h2>
         <a href="plymouth-gin-blog.html"><p class="button large fadeLoad">View project<p></a>
     </div>
@@ -146,23 +154,20 @@
 
 
 
-
-
-
-
 <!-- modal -->
 
-<div class="overlay overlay-slidedown"> 
+    <div class="overlay overlay-slidedown"> 
         <button type="button-overlay" class="overlay-close menu button large">Close <img class="icon-close" src="images/icon-close.svg"></button>
         <nav>
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <!-- <li class="inactive">Clients</li> -->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
+   
 
 
 

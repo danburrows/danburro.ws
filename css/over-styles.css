@@ -1,5 +1,5 @@
 body {
-  font-family: "FreightBigProLight-Regular", sans-serif;
+  font-family: "freight-big-pro", serif;
   background-color: #000;
   color: #fff;
   font-size: 12px;
@@ -56,8 +56,8 @@ body {
 h1 {
   font-size: 6rem;
   line-height: 6rem;
-  font-family: "FreightBigProLight-Regular", serif;
-  font-weight: 400;
+  font-family: "freight-big-pro", serif;
+  font-weight: 300;
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
 }
@@ -105,21 +105,22 @@ h1 {
 h2 {
   font-size: 4rem;
   line-height: 3.5rem;
-  font-family: "FreightBigProLight-Regular", serif;
+  font-family: "freight-big-pro", serif;
   font-weight: 400;
 }
 
 h5 {
-  font-size: .9rem;
+  font-size: .8rem;
   line-height: 1.5rem;
-  font-family: "FuturaPT-Heavy", sans-serif;
+  font-family: "nimbus-sans-extended", sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
+  letter-spacing: -0.03rem;
 }
 
 
 p {
-  font-family: "FreightBigProBook-Regular", serif;
+  font-family: "freight-big-pro", serif;
   font-weight: 400;
   font-size: .7rem;
   line-height: 2rem; 
@@ -148,13 +149,13 @@ a:visited, a:active  {
 
 
 a .button.large {
-  font-family: "FuturaPT-Heavy", sans-serif;
+  font-family: "nimbus-sans-extended", sans-serif;
   font-weight: 700;
   opacity: 1;
   border: 1px solid #ffffff;
   border-radius: 0;
   padding: 1.4em 3.5em;
-  font-size: 1rem;
+  font-size: 0.8rem;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
@@ -172,10 +173,10 @@ a .button.large {
 
 
 #nav p, #nav a, .tel {
-  font-family: "FuturaPT-Heavy", sans-serif;
+  font-family: "nimbus-sans-extended", sans-serif;
   font-weight: 700;
   line-height: 1.5em;
-  font-size: 1em;
+  font-size: 0.8rem;
   line-height: 0;
   padding-right: 1rem;
 }
@@ -186,7 +187,7 @@ a .button.large {
 
 #nav a {
   color: #ffffff;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #nav a:hover {
@@ -206,6 +207,10 @@ a .button.large {
 @media (max-width: 642px) {
   .nav-details { display: none;
 }
+}
+
+.discipline {
+  opacity: .5;
 }
 
 .menu {
@@ -236,6 +241,7 @@ a .button.large {
 .fadeLoad {
     -webkit-animation-duration: 1s;
   -webkit-animation-delay: .5s;
+  z-index: 0;
 }
 
 .menu, .logo {
@@ -244,17 +250,10 @@ a .button.large {
 }
 
 .menu img {
-  height: .9rem;
+  height: 1rem;
   padding-left: .5rem;
 }
 
-
-
-.logotype {
-  font-family: "FuturaPT-Heavy", sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-}
 
 @media (max-width: 550px) {
   .logotype { padding-left: 3rem;
@@ -268,8 +267,9 @@ h1.about {
 }
 
 .about a, .about-page a, .contact-page a {
-  font-family: "FreightBigProLight-Italic", serif;
+    font-family: "freight-big-pro", sans-serif;
   opacity: 0.5;
+  font-style: italic;
 }
 
 .about a:hover, .about-page a:hover, .contact-page a:hover {
@@ -279,7 +279,7 @@ h1.about {
 
 
 .small-link a {
-  font-family: "FuturaPT-Heavy", sans-serif;
+  font-family: "nimbus-sans-extended", sans-serif;
   font-weight: 700;
   font-size: .9rem;
   color: #ffffff;
@@ -287,6 +287,7 @@ h1.about {
   padding-bottom: 3px;
   white-space: nowrap;
   margin-left: 1em;
+  font-style: normal;
 }
 
 
@@ -340,12 +341,13 @@ h1.about {
 
  @media (max-width: 503px) {
   .details {
-    margin-top: 0;
+    margin-top: 5rem;
 }
 }
 
 .details h2 {
-  margin: 2rem 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .project-header h1{
@@ -400,10 +402,10 @@ background-image: linear-gradient(-180deg, #FFFFFF 0%, #FC9AB0 42%, #476EFA 97%)
 
 .icons p {
   text-align: center;
-  font-family: "FuturaPT-Heavy", sans-serif;
+  font-family: "nimbus-sans-extended", sans-serif;
   font-weight: 700;
   line-height: 2rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .project-header.lucozade-made-to-move, .project-card.lucozade-made-to-move{
@@ -503,8 +505,8 @@ background-size: cover;
 #project-details p {
   font-size: 2rem;
   margin-right: 2rem;
-  font-family: "FreightBigProBook-Regular", serif;
-  font-weight: 400;
+  font-family: "freight-big-pro",sans-serif;
+  font-weight: 500;
 }
 
 @media (max-width: 1025px){
@@ -542,8 +544,8 @@ background-size: cover;
 
 
 .lucozade-made-to-move {
-  color: #000000;
-  background-color: #FBC700;
+/*  color: #000000;
+*/  background-color: #FBC700;
 }
 
 .lucozade-nav p  {
@@ -578,6 +580,7 @@ background-size: cover;
   font-size: 3rem;
 }
 
+
 .section {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -591,12 +594,57 @@ background-size: cover;
   padding-bottom: 2rem;
 }
 
-
-
 }
 
 .info p {
   font-size: 2rem;
+}
+
+.dulux hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(10, 34, 106, 0.3);
+
+}
+
+.bleed img {
+  width: 100%;
+  height: auto;
+
+}
+
+.logotype a {
+  color: red;
+
+}
+
+footer h2 {
+  font-family: "nimbus-sans-extended",serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 6rem 0;
+}
+
+footer hr {
+  margin-bottom: 0; 
+}
+
+footer a {
+  color: #ffffff;
+/*    border-bottom: 1px #ffffff solid;
+    padding-bottom: 10px;*/
+}
+
+footer a:hover {
+  color: #ffffff;
+  opacity: 0.2;
+}
+
+
+footer img {
+    height: 1.5rem;
+    margin-left: .5rem; 
+
 }
 
 hr {
@@ -617,27 +665,7 @@ hr {
     margin-left: 2em;
     margin-right: 2em; 
 }
-
-
-.dulux hr {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(10, 34, 106, 0.3);
-
 }
-
-.bleed img {
-  width: 100%;
-  height: auto;
-
-}
-
-.logotype a {
-  color: red;
-
-}
-
-
-
 
 
 @media (max-width: 611px) {

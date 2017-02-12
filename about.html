@@ -14,10 +14,19 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/vendor/modernizr.js"></script>
-    <script src="https://use.typekit.net/bjy8kcd.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'bjy8kcd',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
   </head>
   <body>
+
 
 <!-- navbar-->
 
@@ -32,7 +41,7 @@
 
 <div class="row fullWidth-inset" id="nav">
 
-      <div class="small-10 large-2 medium-2 columns animated fadeInDown logotype">
+      <div class="small-10 large-3 medium-2 columns animated fadeInDown logotype">
         <a href="index.html">Dan Burrows</a>
       </div>
 
@@ -41,33 +50,51 @@
         <a href="mailto:dan@danburro.ws?subject=Hello">dan@danburro.ws</a> <span class="tel">(t)&nbsp;07747&nbsp;515058</span>
       </div>
 
-      <div class="small-3 end columns animated fadeInDown nav-details">
+      <div class="small-3 small-offset-1 end columns animated fadeInDown nav-details">
         <p>Follow:</p>
-        <a href="https://dribbble.com/danburrows">dribbble</a> <a href="http://drexelville.tumblr.com/">tumblr</a> <a href="https://twitter.com/burrowsdan">twitter</a></p>
+        <a href="https://dribbble.com/danburrows">dribbble</a> <a href="http://zone-d.tumblr.com/">tumblr</a> <a href="https://twitter.com/burrowsdan">twitter</a></p>
       </div> 
 
 </div>
+
 <!-- about -->
 
 <div class="about-page">
     <div class="row fullWidth-inset">
           <div class="small-12 columns about-page">
-          <h5>About &mdash;</h5>
-            <h1>I’m senior designer living in Canterbury, working in London. Previously, I've working at Etch Apps and Analogfolk London. I specialise in user interface design, digital brand and identity. I’ve just gone freelance to allow for more time spent with my family and to hone my skills.</h1>
-            <h1>I’m currently looking for medium and long term contracts working with teams in house/client side, for agencies or remote.</h1><h1><a href="contact.html">Contact</a> me if you like to discuss working together.</h1>
+          <h5>About&nbsp;&mdash;</h5>
+            <h1>A freelance senior designer working in London and living in Canterbury, Kent.</h1>
+            <h1>I have previously worked at Etch Apps and Analogfolk London and specialise in user interface design, digital brand and identity.</h1>
+
+            <h1>I’m currently looking for medium to long term contracts working with teams in house/client side, for agencies or remote. Please <a href="contact.html">message</a> me if you'd like to discuss working together.</h1>
           </div>         
     </div>
 </div>
 
+<footer>
+    <div class="row fullWidth fadeLoad">
+        <div class="small-12 columns">
+           <hr> 
+        </div>
+    </div>
+
+    <div class="row fullWidth-inset fadeLoad footer-nav">
+        <div class="small-12 small-centered columns">
+            <h2><a href="index.html">View work<img src="images/icon-chevron-white.svg"></a></h2>
+        </div>
+    </div>
+</footer>
+
+
 <!-- modal -->
 
-<div class="overlay overlay-slidedown"> 
+    <div class="overlay overlay-slidedown"> 
         <button type="button-overlay" class="overlay-close menu button large">Close <img class="icon-close" src="images/icon-close.svg"></button>
         <nav>
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
-                <li class="inactive">Clients</li>
+                <!-- <li class="inactive">Clients</li> -->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>

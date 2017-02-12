@@ -14,10 +14,19 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/vendor/modernizr.js"></script>
-    <script src="https://use.typekit.net/bjy8kcd.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'bjy8kcd',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
   </head>
   <body>
+
 
 <!-- navbar-->
 
@@ -32,7 +41,7 @@
 
 <div class="row fullWidth-inset" id="nav">
 
-      <div class="small-10 large-2 medium-2 columns animated fadeInDown logotype">
+      <div class="small-10 large-3 medium-2 columns animated fadeInDown logotype">
         <a href="index.html">Dan Burrows</a>
       </div>
 
@@ -41,12 +50,13 @@
         <a href="mailto:dan@danburro.ws?subject=Hello">dan@danburro.ws</a> <span class="tel">(t)&nbsp;07747&nbsp;515058</span>
       </div>
 
-      <div class="small-3 end columns animated fadeInDown nav-details">
+      <div class="small-3 small-offset-1 end columns animated fadeInDown nav-details">
         <p>Follow:</p>
-        <a href="https://dribbble.com/danburrows">dribbble</a> <a href="http://drexelville.tumblr.com/">tumblr</a> <a href="https://twitter.com/burrowsdan">twitter</a></p>
+        <a href="https://dribbble.com/danburrows">dribbble</a> <a href="http://zone-d.tumblr.com/">tumblr</a> <a href="https://twitter.com/burrowsdan">twitter</a></p>
       </div> 
 
 </div>
+
 
 
 
@@ -58,46 +68,48 @@
             <h1>Don't be shy</h1>
         </div>
         <div class="large-6 columns contact">
-          <h5>Email &mdash;</h5>
+          <h5>Email&nbsp;&mdash;</h5>
             <h1><a>dan@danburro.ws</a></h1>
         </div>
         <div class="large-6 columns contact">
-          <h5>LinkedIn &mdash;</h5>
+          <h5>LinkedIn&nbsp;&mdash;</h5>
             <h1><a>linkedin.com/in/dan-burrows</a></h1>
         </div>
         <div class="large-6 columns contact">
-          <h5>Phone &mdash;</h5>
+          <h5>Phone&nbsp;&mdash;</h5>
             <h1><a class="tel:07747515058">&nbsp;07747&nbsp;515058</a></h1>
         </div>
         <div class="large-6 columns contact">
-          <h5>Dribbble &mdash;</h5>
+          <h5>Dribbble&nbsp;&mdash;</h5>
             <h1><a class="">dribbble.com/danburrows</a></h1>
         </div> 
         <div class="large-6 columns contact">
-          <h5>Twitter &mdash;</h5>
+          <h5>Twitter&nbsp;&mdash;</h5>
             <h1><a class="">@burrowsdan</a></h1>
         </div>
         <div class="large-6 columns contact">
-          <h5>Tumblr &mdash;</h5>
+          <h5>Tumblr&nbsp;&mdash;</h5>
             <h1><a class="">zoned-d</a></h1>
         </div>        
     </div>
 </div>  
 
 
+
 <!-- modal -->
 
-<div class="overlay overlay-slidedown"> 
+    <div class="overlay overlay-slidedown"> 
         <button type="button-overlay" class="overlay-close menu button large">Close <img class="icon-close" src="images/icon-close.svg"></button>
         <nav>
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <!-- <li class="inactive">Clients</li> -->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
+   
    
 
     <script src="js/classie.js"></script>

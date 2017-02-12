@@ -14,13 +14,22 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/vendor/modernizr.js"></script>
-    <script src="https://use.typekit.net/bjy8kcd.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'bjy8kcd',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
   </head>
   <body>
 
 <!-- project-header -->
 <div class="project-header magicseaweed">
+
 
 <!-- navbar-->
 
@@ -35,7 +44,7 @@
 
 <div class="row fullWidth-inset" id="nav">
 
-      <div class="small-10 large-2 medium-2 columns animated fadeInDown logotype">
+      <div class="small-10 large-3 medium-2 columns animated fadeInDown logotype">
         <a href="index.html">Dan Burrows</a>
       </div>
 
@@ -44,12 +53,13 @@
         <a href="mailto:dan@danburro.ws?subject=Hello">dan@danburro.ws</a> <span class="tel">(t)&nbsp;07747&nbsp;515058</span>
       </div>
 
-      <div class="small-3 end columns animated fadeInDown nav-details">
+      <div class="small-3 small-offset-1 end columns animated fadeInDown nav-details">
         <p>Follow:</p>
-        <a href="https://dribbble.com/danburrows">dribbble</a> <a href="http://drexelville.tumblr.com/">tumblr</a> <a href="https://twitter.com/burrowsdan">twitter</a></p>
+        <a href="https://dribbble.com/danburrows">dribbble</a> <a href="http://zone-d.tumblr.com/">tumblr</a> <a href="https://twitter.com/burrowsdan">twitter</a></p>
       </div> 
 
 </div>
+
 
     <div class="row fullWidth-inset animated fadeInUp">
         <div class="small-12 columns">
@@ -61,35 +71,37 @@
 
 
 <!-- intro -->
-<div class="row fullWidth-inset" id="project-details">
+<div class="row fullWidth-inset fadeLoad" id="project-details">
     <div class="small-12  columns">
-                <div class="small-12 large-7 columns animated fadeIn">
-                    <h5>Sed posuere consectetur &mdash;</h5>
-                    <p>E-commerce, blog and identity design</p>
+                <div class="small-12 large-7 columns ">
+                    <h5>Work&nbsp;&mdash;</h5>
+                    <p>iOS App, Logo Redesign</p>
                 </div>
-                <div class="small-12 large-3 columns animated fadeIn">
-                    <h5>Role &mdash;</h5>
-                    <p>Design & Art Direction</p>
+                <div class="small-12 large-3 columns ">
+                    <h5>Role&nbsp;&mdash;</h5>
+                    <p>Design, UX</p>
                 </div>
-                <div class="small-12 large-2 columns animated fadeIn">
-                    <h5>Client &mdash;</h5>
-                    <p>Hot Salvation</p>
+                <div class="small-12 large-2 columns ">
+                    <h5>Client&nbsp;&mdash;</h5>
+                    <p>Self Initiated</p>
                 </div>
             </div>
     </div>
 </div>
 <!-- list-view -->
-<div class="row fullWidth section-bottom">
+<div class="row fullWidth section-bottom fadeLoad">
     <div class="small-12 columns">
         <img src="images/magicseaweed/intro-image.jpg">
     </div>
 </div>
 
 <!-- centered-blurb -->
-<div class="row fullWidth-inset section">
+<div class="row fullWidth-inset section fadeLoad">
     <div class="small-12 large-8 large-centered columns">
-        <h5>Brief &mdash;</h5>
-        <p>Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        <h5>Intro&nbsp;&mdash;</h5>
+        <p> A self initiated project to redesign the surf forecasting iOS app and brand of Magicseaweed. The current app is feature heavy, and lacks the design finesse prevalent with other brands in their sector, resulting in an over complex and unexpectedly unpleasant user experience.</p>
+        <p>I redesigned user interactions, animations, user interface, addressing the user experience and producing an alternative Magicseaweed logo. 
+        </p>
     </div>
 </div>
 
@@ -97,34 +109,36 @@
 
 
 <!-- item 1 -->
-<div class="row fullWidth section top">
+<div class="row fullWidth section top fadeLoad">
     <div class="small-12 small-centered columns">
         <img src="images/magicseaweed/map-zoom.jpg" alt="">
     </div>
 </div>
 
 <!-- item 2 -->
-<div class="row fullWidth-inset section">
+<div class="row fullWidth-inset section fadeLoad">
     <div class="large-12 columns">
              <div class=" small-12 large-5 large-push-1 columns">
                  <img src="images/magicseaweed/location-view.jpg">
             </div>
     
-             <div class="small-12 large-3 large-offset-2 columns detail info end">
-                <h5>Venenatis Sit Bibendum &mdash;</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et etiam porta sem malesuada.</p>   
-                <img src="images/magicseaweed/location-detail-1.jpg">   
-                 <img src="images/magicseaweed/location-detail-2.jpg">
+             <div class="small-12 large-4 large-offset-2 columns detail info end">
+                <h5>Detail&nbsp;&mdash;</h5>
+                <p>The main view shows a simplified interface that when interacted with provides more detailed information on the upcoming forecasts for that week or selected days.</p>
+                 <div class=" small-7 end columns">   
+                    <img src="images/magicseaweed/location-detail-1.jpg">   
+                     <img src="images/magicseaweed/location-detail-2.jpg">
+                </div>
             </div>
     </div>
 </div>
 
 <!-- item 1 -->
-<div class="row fullWidth-inset project-card magicseaweed section">
+<div class="row fullWidth-inset project-card magicseaweed section fadeLoad">
     <div class="large-12 columns">
             <div class="small-12 large-3 large-push-1  columns detail info end">
-                <h5>Venenatis Sit Bibendum &mdash;</h5>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et etiam porta sem malesuada. Praesent commodo cursus magna, vel scelerisque nisl consectetur et etiam porta sem malesuada.</p>   
+                <h5>‘Search’ and ‘Add’ locations&nbsp;&mdash;</h5>
+                <p>Similar to the iOS weather app, users can swipe through saved/favourited locations, as well as view them as a list. ‘Map’ view allows users to explore new areas and add new locations.</p>   
             </div>
             <div class="small-12 large-7 columns">
                  <img src="images/magicseaweed/list-view.png">
@@ -132,59 +146,64 @@
     </div>
 </div>
 
-
-
-
-<!-- centered-blurb -->
-<div class="row fullWidth-inset section">
-    <div class="small-12 large-8 large-centered columns">
-        <h5>Brief &mdash;</h5>
-        <p>Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+<div class="row fullWidth section fadeLoad">
+    <div class="small-12 columns"> 
     </div>
 </div>
 
 
+
+    <div class="row fullWidth-inset section-top fadeLoad">
+        <div class="small-12 large-8 large-centered columns">
+            <h5>Logo redesign&nbsp;&mdash;</h5>
+            <p>Small considered adjustments to bring the logo inline with the app UI. </p>
+        </div>
+    </div>
+
+
+
 <!-- logo-dev -->
-<div class="row fullWidth-inset brand-detail">
+<div class="row fullWidth-inset brand-detail fadeLoad">
     <div class="small-12 large-1 columns">
-        <h5>Venenatis Sit Bibendum &mdash;</h5>
+        <h5>Current logo&nbsp;&mdash;</h5>
     </div>
     <div class="small-12 large-4 large-offset-1 columns">
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in.</p>
+        <p>The current ‘msw’ mark somewhat mimics the building and breaking of waves, but seems to lack any adjustment to the letterform resulting in the logo feeling wooden and lacking any sense of fluidity </p>
     </div>               
-    <div class="small-12 large-5 columns">
+    <div class="small-12 large-5 columns fadeLoad">
         <img src="images/magicseaweed/msweedlogo-old.jpg" alt="">
     </div>
 </div>
 
 <!-- logo-dev -->
-<div class="row fullWidth-inset brand-detail">
+<div class="row fullWidth-inset brand-detail fadeLoad">
     <div class="small-12 large-1 columns">
-        <h5>Venenatis Sit Bibendum &mdash;</h5>
+        <h5>Grid&nbsp;&mdash;</h5>
     </div>
     <div class="small-12 large-4 large-offset-1 columns">
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. </p>
+        <p>Some simple alterations were made to the MagicSeaWeed logo. The use of the wave metaphor had pontenial. I decided to set the letter forms on a diagonal grid, rounding the corners to emphasis fluidity, and applying the Apercu font to the Logo type.
+</p>
     </div>               
-    <div class="small-12 large-5 columns">
+    <div class="small-12 large-5 columns fadeLoad">
         <img src="images/magicseaweed/msweedlogo-new-grid.jpg" alt="">
     </div>
 </div>
 
 <!-- logo-dev -->
-<div class="row fullWidth-inset brand-detail">
+<div class="row fullWidth-inset brand-detail fadeLoad">
     <div class="small-12 large-1 columns">
-        <h5>Venenatis Sit Bibendum &mdash;</h5>
+        <h5>New logo&nbsp;&mdash;</h5>
     </div>
     <div class="small-12 large-4 large-offset-1 columns">
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Cras mattis consectetur.</p>
+        <p>The solution is refined and recognisable with options for the mark to be used independently.</p>
     </div>               
-    <div class="small-12 large-5 columns section-bottom">
+    <div class="small-12 large-5 columns section-bottom fadeLoad">
         <img src="images/magicseaweed/app-icon.jpg" alt="">
     </div>
 </div>
 
-<!-- logo-screens -->
-<div class="row fullWidth magicseaweed">
+<!-- logo-screens --> 
+<div class="row fullWidth magicseaweed fadeLoad">
     <div class="small-12 small-centered columns">
         <img src="images/magicseaweed/logo-screens.png" alt="">
     </div>
@@ -192,19 +211,33 @@
 
 
 
+<footer>
+    <div class="row fullWidth-inset fadeLoad footer-nav fadeLoad">
+        <div class="small-12 small-centered columns">
+            <h2><a href="">Next project<img src="images/icon-chevron-white.svg"></a></h2>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
 <!-- modal -->
 
-<div class="overlay overlay-slidedown"> 
+    <div class="overlay overlay-slidedown"> 
         <button type="button-overlay" class="overlay-close menu button large">Close <img class="icon-close" src="images/icon-close.svg"></button>
         <nav>
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Work</a></li>
                 <li><a href="about.html">About</a></li>
                 <!-- <li class="inactive">Clients</li> -->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>
+   
    
 
     <script src="js/classie.js"></script>

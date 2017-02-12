@@ -11,7 +11,7 @@
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-	font-family: "futura-pt", sans-serif;
+	font-family: "nimbus-sans-extended", serif;
 	font-weight: 700;
 	position: absolute;
 	outline: none;
@@ -19,17 +19,16 @@
 	color: #ffffff;
 	border: 1px solid #ffffff;
 	padding: 1.4em 3.5em;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	border-radius: 0;
 }
 
 
 /* Menu style */
 .overlay nav {
-  font-family: "FreightBigProLight-Regular", serif;
+  font-family: "freight-big-pro",sans-serif;
   font-weight: 400;
 	position: relative;
-	height: 55%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	top: 7rem;
@@ -44,7 +43,8 @@
 
 .overlay ul {
 	list-style: none;
-	padding: 0;
+	padding-top: 10rem;
+	padding-bottom: 5rem;
 	margin: 0 auto;
 	display: inline-block;
 	height: 100%;
@@ -53,12 +53,12 @@
 
 .overlay ul li {
 	display: block;
-	height: 20%;
-	height: calc(100% / 5);
+/*	height: 20%;
+*/	height: calc(100% / 5);
 	min-height: 54px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5remrem;
 }
 
 .overlay ul li a {
