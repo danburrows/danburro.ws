@@ -111,7 +111,7 @@ h2 {
 
 h5 {
   font-size: .8rem;
-  line-height: 1.5rem;
+  line-height: 1.2rem;
   font-family: "nimbus-sans-extended", sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -123,7 +123,8 @@ p {
   font-family: "freight-big-pro", serif;
   font-weight: 400;
   font-size: .7rem;
-  line-height: 2rem; 
+  line-height: 2rem;
+  margin-bottom: 0.6rem;
 }
 
 
@@ -345,6 +346,87 @@ h1.about {
 }
 }
 
+
+ @media (min-width: 1500px) {
+  .details {
+    margin-top: 16rem;
+  }
+
+    .details h2 {
+      font-size: 5rem;
+      line-height: 6rem;
+}
+    a .button.large {
+      font-size: 1.2rem;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+   }
+
+   h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+   }
+
+   .circle {
+    width: 31.4rem;
+   }
+
+   #nav a, #nav p, .small-link, .tell {
+    font-size: 1.2rem;
+    padding-bottom: .8rem;
+   }
+
+}
+
+ @media (min-width: 2000px) {
+    .details {
+      margin-top: 32rem;
+    }
+
+      .details h2 {
+        font-size: 6rem;
+        line-height: 6rem;
+      }
+
+      h1 {
+      font-size: 8rem;
+      line-height: 8rem;  
+    }
+
+    #nav a, #nav p, .small-link, .tell {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+   }
+
+    #nav {
+      padding-top: 3rem;
+    }
+
+       .menu img {
+      height: 1.3rem;
+    }
+
+    .brand-detail {
+    padding: 7rem 24rem;
+}
+
+
+}
+
+@media (min-width: 2300px) {
+    .details h2 {
+      font-size: 7rem;
+      line-height: 8rem;
+    }
+}
+
+
+
+
 .details h2 {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -364,10 +446,15 @@ h1.about {
 
 @media (max-width: 500px) {
   .project-header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 4rem;
     padding: 5rem 0 2rem 0;
 }
+
+.details h2 {
+font-size: 3rem;
+}
+
 }
 
 .project-header.magicseaweed, .project-card.magicseaweed{
@@ -669,7 +756,15 @@ hr {
 
 
 @media (max-width: 611px) {
-  .menu.button.large { border: 0px;
-          padding: 1.4em .5em;
+  .menu.button.large {
+    border: 0px;
+    padding: 2em .5em;
 }
+
+  .brand-detail img {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
+
 }

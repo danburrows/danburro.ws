@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dan Burrows | Digital &amp; UI Designer</title>
     <link rel="stylesheet" href="css/foundation.css" />
-        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+
     <link rel="stylesheet" href="css/over-styles.css" />
     <link rel="stylesheet" type="text/css" href="css/modal.css" />
     <link rel="stylesheet" href="css/app.css">
@@ -32,7 +32,7 @@
     var config = {
       kitId: 'bjy8kcd',
       scriptTimeout: 3000,
-      async: true
+      async: false
     },
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
@@ -74,7 +74,9 @@
 
 <div class="row fullWidth-inset">
       <div class="small-12 columns">
-        <h1 class="about fadeLoad">Dan Burrows is a senior designer based in Canterbury, United Kingdom. He's prevously worked at <a href="http://www.etchapps.com" class="about-link-1">Etch</a> and <span class="erase"> now</span> <a href="http://www.analogfolk.com" class="about-link-2">Analogfolk London,</a> but is now <span class="circle">freelance.</span> He specialises in digital and user interface design, is passionate about typography, identity, and technology and loves creating stunning visuals.<span class="small-link"><a href ="about.html">read more <img src="images/icon-chevron.svg"></a><span></h1>
+        <h1 class="about fadeLoad">Dan Burrows is a senior designer based in Canterbury, United Kingdom. He's prevously worked at <a href="http://www.etchapps.com" class="about-link-1">Etch</a> and <span class="erase"> now</span> <a href="http://www.analogfolk.com" class="about-link-2">Analogfolk London,</a> but is now <span class="circle">freelance.</span> He specialises in digital and user interface design, is passionate about typography, identity, and technology and loves creating stunning visuals.
+
+        <!-- <span class="small-link"><a href ="about.html">read more <img src="images/icon-chevron.svg"></a><span> --></h1>
       </div>         
 </div>  
 
@@ -123,7 +125,7 @@
         <h2 class="fadeLoad">Magicseaweed</h4>
         <a href="magicseaweed.html"><p class="button large fadeLoad">View project<p></a>
     </div>
-    <div class="small-12 large-8 columns fadeLoad">
+    <div class="small-12 large-8 bleed columns fadeLoad">
         <img src="images/magicseaweed/logo-screens.png">
     </div>
 </div>
