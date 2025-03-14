@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="302" height="278" viewBox="0 0 302 278">
+  <defs>
+    <path id="remote-2@2x-a" d="M295,233 L302,233 L302,271 L295,271 L295,278 L240.319221,278 L240.319221,271 L-1.8189894e-12,271 L-1.8189894e-12,233 L240.319221,233 L240.319221,0 L295,0 L295,233 Z"/>
+    <linearGradient id="remote-2@2x-c" x1="0%" x2="100%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#F9F7EE"/>
+      <stop offset="100%" stop-color="#F9F7EE" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="remote-2@2x-d" x1="0%" x2="100%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#F9F7EE"/>
+      <stop offset="100%" stop-color="#F9F7EE" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="remote-2@2x-b" fill="#fff">
+      <use xlink:href="#remote-2@2x-a"/>
+    </mask>
+    <use fill="#F9F7EE" xlink:href="#remote-2@2x-a"/>
+    <text fill="#000" font-family="CardinalFruit-Regular, Cardinal Fruit" font-size="25" letter-spacing="-.526" mask="url(#remote-2@2x-b)" transform="rotate(-90 267 127)">
+      <tspan x="152.5" y="141.058">or partially remote </tspan> <tspan x="299.497" y="141" font-family="CardinalFruitW-Italic, Cardinal Fruit W" font-style="italic">(UK)</tspan> <tspan x="338.15" y="141.058"> work</tspan>
+    </text>
+    <rect width="127" height="22" x="203.5" y="64.5" fill="url(#remote-2@2x-c)" mask="url(#remote-2@2x-b)" transform="rotate(90 267 75.5)"/>
+    <text fill="#000" font-family="CardinalFruit-Regular, Cardinal Fruit" font-size="25" letter-spacing="-.526" mask="url(#remote-2@2x-b)">
+      <tspan x="37.5" y="265">Currently looking for remote</tspan>
+    </text>
+    <rect width="92" height="22" x="38" y="240" fill="url(#remote-2@2x-d)" mask="url(#remote-2@2x-b)"/>
+  </g>
+</svg>

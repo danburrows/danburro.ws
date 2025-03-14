@@ -1,0 +1,197 @@
+@font-face {
+  font-family: GT-America-Standard-Medium;
+  src: url(../fonts/GT-America-Standard-Medium.woff);
+}
+
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #000000;
+  z-index: 4000;
+  
+}
+
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+  overflow: scroll;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+#trigger-overlay, .overlay-close {
+  font-family: GT-America-Standard;
+  text-transform: uppercase;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border-radius: 25px;
+  background-color: #000000;
+  color: #F5F4ED;
+  height: 2.5rem;
+  min-width: 8rem;
+  padding: .9rem 1.5rem;
+  font-size: 11px;
+  letter-spacing: .5px;
+  z-index: 1000;
+      opacity: 1;
+      text-decoration: none;
+      -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+      border: 1px solid #909090;
+}
+
+#trigger-overlay:hover, .overlay-close:hover {
+    cursor: pointer;
+    border: 1px solid #F5F4ED;
+}
+
+/* Menu style */
+.overlay nav {
+
+}
+
+.overlay ul {
+  list-style: none;
+}
+
+.overlay ul li {
+  display: block;
+  height: 20%;
+  height: calc(100% / 5);
+  min-height: 54px;
+}
+
+.overlay ul li a {
+  display: block;
+  color: #F5F4ED;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+
+.menu-col-wrapper {
+/*  position: relative;
+*/}
+
+.menu-col {
+    margin-top: 17px;
+}
+
+.menu-col p{
+  font-family: cardinalfruit-regular;
+  font-size: 16px;
+  color: #F5F4ED;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.menu-col-wrapper > .menu-col-title {
+margin-top: -20px;
+}
+
+.menu-col h4 {
+
+font-family: Perpetua Titling MT W00 Light;
+font-size: 24px;
+color: #F5F4ED;
+letter-spacing: 0.07px;
+line-height: 26px;
+margin-bottom: 0;
+}
+
+.menu-col span {
+    margin: 0 3px;
+}
+
+.menu-col h5 {
+    padding-bottom: 16px;
+}
+
+.menu-projects {
+  margin-top: 38px;
+}
+
+.menu-col h1 {
+  color: #F5F4ED;
+  font-size: 40px;
+  line-height: 29px;
+}
+
+.nav-links {
+  height: 100vh;
+  margin-top: 15px;
+}
+
+@media only screen 
+  and (max-width: 1024px) {
+.nav-links {
+  height: 30vh;
+}
+}
+
+.contact {
+  margin-top: 30vh;
+
+}
+
+.connect {
+  margin-top: 30px;
+}
+
+
+
+

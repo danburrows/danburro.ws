@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="340" height="74" viewBox="0 0 440 74">
+
+
+
+  
+  <defs>
+
+
+<style type="text/css">
+  @font-face {
+    font-family: 'cardinalfruit-regular';
+        src: url('../fonts/cardinalfruitw-regular.eot');
+        src: url('../fonts/cardinalfruitw-regular.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/cardinalfruitw-regular.woff') format('woff');
+        }
+</style>
+
+    <rect id="marquee-a" width="900" height="74" x="1" y="0"/>
+    <linearGradient id="marquee-snip-c" x1="0%" x2="100%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#FAF9F2"/>
+      <stop offset="100%" stop-color="#FAF9F2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="marquee-snip-d" x1="0%" x2="100%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#FAF9F2" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FAF9F2"/>
+    </linearGradient>
+  </defs>
+  
+  <g fill="none" fill-rule="evenodd">
+    
+    <mask id="marquee-b" fill="#fff">
+      <use xlink:href="#marquee-a"/>
+    </mask>
+    
+    <use fill="#FAF9F2" xlink:href="#marquee-a"/>
+    
+    <text fill="black" font-family="CardinalFruit-Regular, Cardinal Fruit" font-size="48" mask="url(#marquee-b)">
+      <tspan x="0" y="48">Currently looking for remote work.</tspan>
+
+          <animateTransform attributeName="transform" attributetype="xml" type="translate" values="440; -500" begin="1s" dur="10s" fill="freeze" repeatCount="indefinite"/>  
+    </text>
+      <rect width="105" height="74" x="335" fill="url(#marquee-snip-c)" mask="url(#marquee-snip-b)" transform="rotate(-180 387.5 37)"/>
+    <rect width="37" height="74" fill="url(#marquee-snip-d)" mask="url(#marquee-snip-b)" transform="rotate(-180 18.5 37)"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="698" height="58" viewBox="0 0 698 58">
+  <defs>
+    <rect id="marquee-3-a" width="747" height="57.182" x="0" y="0"/>
+    <linearGradient id="marquee-3-c" x1="0%" x2="100%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#FAF9F2"/>
+      <stop offset="100%" stop-color="#FAF9F2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="marquee-3-d" x1="0%" x2="100%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#FAF9F2" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#FAF9F2"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="695.455" height="57.182" fill="#FAF9F2" fill-rule="nonzero" transform="translate(.773)"/>
+    <g transform="translate(.773)">
+      <mask id="marquee-3-b" fill="#fff">
+        <use xlink:href="#marquee-3-a"/>
+      </mask>
+      <text fill="#000" font-family="Helvetica" font-size="37.091" mask="url(#marquee-3-b)">
+        <tspan x="-.773" y="37.773">Currently looking for remote work.</tspan>
+      </text>
+    </g>
+    <rect width="81.136" height="57.182" x="616" fill="url(#marquee-3-c)" fill-rule="nonzero" transform="rotate(-180 656.568 28.59)"/>
+    <rect width="28.591" height="57.182" fill="url(#marquee-3-d)" fill-rule="nonzero" transform="rotate(-180 14.295 28.59)"/>
+  </g>
+</svg>
