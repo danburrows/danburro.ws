@@ -1,0 +1,770 @@
+body {
+  font-family: "freight-big-pro", serif;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5em; 
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.fullWidth-left {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 6em;
+   max-width: initial;
+}
+
+.fullWidth-right {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-right: 6em;
+   max-width: initial;
+}
+
+.fullWidth-inset {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   padding-right: 6em;
+   padding-left: 6em;
+   max-width: initial;
+}
+
+@media (max-width: 550px) {
+.fullWidth-inset {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+.fullWidth-left {
+  padding-left: 2em;
+}
+
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 6rem;
+  font-family: "freight-big-pro", serif;
+  font-weight: 300;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+@media (max-width: 1040px) {
+  h1 {  font-size: 4rem;
+        line-height: 4rem;
+}
+}
+
+@media (max-width: 500px) {
+  h1 {  font-size: 3rem;
+        line-height: 3rem;
+}
+}
+
+
+.about-page {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.contact-page {
+  margin-top: 10rem;
+}
+
+.contact {
+  margin-bottom: 0rem;
+}
+
+.about-page h1, .contact-page h1 {
+ font-size: 3.8rem;
+ line-height: 4rem;
+ margin-bottom: 4rem;
+/* text-align: center;
+*/}
+
+.about-page h5, .contact-page h5 {
+  margin-bottom: 1rem;
+}
+
+
+
+
+h2 {
+  font-size: 4rem;
+  line-height: 3.5rem;
+  font-family: "freight-big-pro", serif;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: .8rem;
+  line-height: 1.2rem;
+  font-family: "nimbus-sans-extended", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: -0.03rem;
+}
+
+
+p {
+  font-family: "freight-big-pro", serif;
+  font-weight: 400;
+  font-size: .7rem;
+  line-height: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+a:hover {
+  opacity: 0.3;
+}
+
+a:visited, a:active  { 
+    color: #ffffff;
+    opacity: 0.3;
+}
+
+
+a .button.large {
+  font-family: "nimbus-sans-extended", sans-serif;
+  font-weight: 700;
+  opacity: 1;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  padding: 1.4em 3.5em;
+  font-size: 0.8rem;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+
+
+/*---navbar---*/
+
+#nav {
+  padding-top: 2.8em;
+}
+
+
+#nav p, #nav a, .tel {
+  font-family: "nimbus-sans-extended", sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  font-size: 0.8rem;
+  line-height: 0;
+  padding-right: 1rem;
+}
+
+.lucozade-nav .tel {
+  color: #ffffff;
+}
+
+#nav a {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+#nav a:hover {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+
+.fixed-nav {
+  position: fixed;
+  width: 100%;
+  z-index: 30000;
+}
+
+/*.nav-details { display: none;}*/
+
+@media (max-width: 642px) {
+  .nav-details { display: none;
+}
+}
+
+.discipline {
+  opacity: .5;
+}
+
+.menu {
+  top: 1em;
+  right: 1em;
+  -webkit-animation-duration: 90s;
+  -webkit-animation-delay: 1s;
+}
+
+@media (max-width: 500px){
+  .menu {
+    top: 0.7em;
+}
+}
+
+
+#logo {
+  top: 2.1em;
+  left: 1.7rem;
+  -webkit-animation-duration: 90s;
+  -webkit-animation-delay: 1s;
+  position: fixed;
+  height: 1.2rem;
+  width: 1.2rem;
+  z-index: 30000;
+}
+
+.fadeLoad {
+    -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .5s;
+  z-index: 0;
+}
+
+.menu, .logo {
+  position: absolute;
+  z-index: 20000;
+}
+
+.menu img {
+  height: 1rem;
+  padding-left: .5rem;
+}
+
+
+@media (max-width: 550px) {
+  .logotype { padding-left: 3rem;
+}
+}
+
+/*--about--*/
+
+h1.about {
+  padding: 12rem 0 6rem 0;
+}
+
+.about a, .about-page a, .contact-page a {
+    font-family: "freight-big-pro", sans-serif;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.about a:hover, .about-page a:hover, .contact-page a:hover {
+  color: #ffffff;
+  opacity: 0.2;
+}
+
+
+.small-link a {
+  font-family: "nimbus-sans-extended", sans-serif;
+  font-weight: 700;
+  font-size: .9rem;
+  color: #ffffff;
+  border-bottom: 1px #ffffff solid;
+  padding-bottom: 3px;
+  white-space: nowrap;
+  margin-left: 1em;
+  font-style: normal;
+}
+
+
+.small-link img { 
+  height: 1em;
+}
+
+.erase {
+    background-image: url(../images/erase.svg);
+    background-repeat: no-repeat;
+    background-size: 2.2em;
+    display: inline-block;
+    text-align: center;
+    background-position: 48% -1px;
+    width: 2.1em;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 2.15s;
+}
+
+.circle {
+    background-image: url(../images/circle.svg);
+    background-repeat: no-repeat;
+    background-size: 3.8em;
+    display: inline-block;
+    text-align: center;
+    background-position: 48% -6px;
+    width: 22.4rem;
+  }
+
+  @media (max-width: 1040px) {
+    .circle {
+      width: 15.4rem;
+  }
+  }
+
+    @media (max-width: 503px) {
+    .circle {
+      width: 11rem;
+  }
+  }
+
+
+
+/*--projects--*/
+
+
+.details {
+  margin-top: 15rem;
+
+}
+
+ @media (max-width: 503px) {
+  .details {
+    margin-top: 5rem;
+}
+}
+
+
+ @media (min-width: 1500px) {
+  .details {
+    margin-top: 16rem;
+  }
+
+    .details h2 {
+      font-size: 5rem;
+      line-height: 6rem;
+}
+    a .button.large {
+      font-size: 1.2rem;
+    }
+
+    h5 {
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+   }
+
+   h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+   }
+
+   .circle {
+    width: 31.4rem;
+   }
+
+   #nav a, #nav p, .small-link, .tell {
+    font-size: 1.2rem;
+    padding-bottom: .8rem;
+   }
+
+}
+
+ @media (min-width: 2000px) {
+    .details {
+      margin-top: 32rem;
+    }
+
+      .details h2 {
+        font-size: 6rem;
+        line-height: 6rem;
+      }
+
+      h1 {
+      font-size: 8rem;
+      line-height: 8rem;  
+    }
+
+    #nav a, #nav p, .small-link, .tell {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+   }
+
+    #nav {
+      padding-top: 3rem;
+    }
+
+       .menu img {
+      height: 1.3rem;
+    }
+
+    .brand-detail {
+    padding: 7rem 24rem;
+}
+
+
+}
+
+@media (min-width: 2300px) {
+    .details h2 {
+      font-size: 7rem;
+      line-height: 8rem;
+    }
+}
+
+
+
+
+.details h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-header h1{
+  font-size: 7rem;
+  padding: 30rem 0 6rem 0;
+}
+
+@media (max-width: 1040px) {
+  .project-header h1 {  font-size: 4rem;
+        line-height: 5rem;
+        padding: 5rem 0 2rem 0;
+}
+}
+
+@media (max-width: 500px) {
+  .project-header h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+    padding: 5rem 0 2rem 0;
+}
+
+.details h2 {
+font-size: 3rem;
+}
+
+}
+
+.project-header.magicseaweed, .project-card.magicseaweed{
+  background-image: url(../images/magicseaweed/header-image.jpg);
+  background-size: cover;
+}
+
+.project-image {
+    -webkit-animation-duration: 90s;
+  -webkit-animation-delay: 1s;
+
+}
+
+.project-header.hot-salvation-records, .project-card.hot-salvation-records{
+  background-image: url(../images/hot-salvation-records/header-image.jpg);
+  background-size: cover;
+}
+
+.project-header.plymouth-gin-home, .project-card.plymouth-gin-home{
+  background-image: url(../images/plymouth-gin-home/plymouth-gin-header-bg.jpg);
+  background-size: cover;
+}
+
+.project-header.plymouth-gin-blog, .project-card.plymouth-gin-blog{
+  background-image: url(../images/plymouth-gin-blog/header-image.jpg);
+  background-size: cover;
+}
+
+.hot-grad {
+background-image: linear-gradient(-180deg, #FFFFFF 0%, #FC9AB0 42%, #476EFA 97%);
+}
+
+.icons p {
+  text-align: center;
+  font-family: "nimbus-sans-extended", sans-serif;
+  font-weight: 700;
+  line-height: 2rem;
+  font-size: 0.8rem;
+}
+
+.project-header.lucozade-made-to-move, .project-card.lucozade-made-to-move{
+  background-image: url(../images/lucozade-made-to-move/header-image.jpg);
+  background-size: cover;
+}
+
+.lucozade-home {
+  background-image: url(../images/lucozade-made-to-move/home-bg-2.jpg);
+background-size: cover;
+}
+
+.project-header.dulux-customisation, .project-card.dulux-customisation {
+  background-image: url(../images/dulux-customisation/header-image.jpg);
+  background-size: cover;
+}
+
+.dulux-white {
+  background-color: #ffffff;
+  color: #0A226A;
+}
+
+.dulux-customisation {
+  background-color: #0A226A;
+}
+
+@media(max-width: 500px){
+  .dulux-icons{
+    margin-top: 4rem;
+  }
+}
+
+.project-header.magicseaweed, .project-card.magicseaweed {
+  background-image: url(../images/magicseaweed/bg.jpg);
+  background-size: cover;
+}
+
+.magicseaweed.section {
+  margin-top: 12rem;
+}
+
+@media (max-width: 500px){
+  .magicseaweed.section {
+  margin-top: 2rem;
+}
+}
+
+
+.magicseaweed {
+  background-image: linear-gradient(-191deg, #88BE9A 1%, #128AAC 90%);
+}
+
+.project-header.hello-hair, .project-card.hello-hair{
+  background-image: url(../images/hello-hair/header-image.jpg);
+  background-size: cover;
+}
+
+.hello-hair.brand {
+  background-image: linear-gradient(-180deg, #FFFFFF 0%, #07FF00 59%);
+}
+
+.hello-hair.brand h5, .hello-hair.brand p {
+  color: #000000;
+}
+
+.hello-hair hr {
+  border-top: 1px solid rgba(0, 0, 0, .4);
+
+}
+
+.hello-hair.logo-dev {
+  background-color: #07FF00;
+  color: #000000;
+}
+
+.hello-hair.brand .info {
+  margin-top: 30rem;
+}
+
+@media (max-width: 500px){
+  .hello-hair.brand .info {
+    margin-top: 0rem;
+
+}
+}
+
+.detail.info {
+  margin-top: 5rem;
+}
+
+#project-details {
+  padding-top: 6rem;
+  padding-bottom: 16em;
+
+}
+
+#project-details p {
+  font-size: 2rem;
+  margin-right: 2rem;
+  font-family: "freight-big-pro",sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 1025px){
+#project-details p {
+  margin-bottom: 4rem;
+}
+#project-details {
+    padding-bottom: 2em;
+}
+}
+
+
+.title.hot-salvation-records img {
+  padding-top: 12em;
+}
+
+.brand-detail {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+
+@media (max-width: 1023px){
+.brand-detail {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+}
+
+.brand-detail p {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+}
+
+
+.lucozade-made-to-move {
+/*  color: #000000;
+*/  background-color: #FBC700;
+}
+
+.lucozade-nav p  {
+  color: #ffffff;
+  background-color: #FBC700;
+}
+
+
+
+.section {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.section-bottom {
+  padding-bottom: 12rem;
+
+}
+
+.section-top {
+  padding-top: 12rem;
+}
+
+.section p, .section-top p {
+  font-size: 4rem;
+  line-height: 1.2em;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 500px){
+.section p {
+  font-size: 3rem;
+}
+
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-top {
+  padding-top: 2rem;
+}
+
+.section-bottom {
+  padding-bottom: 2rem;
+}
+
+}
+
+.info p {
+  font-size: 2rem;
+}
+
+.dulux hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(10, 34, 106, 0.3);
+
+}
+
+.bleed img {
+  width: 100%;
+  height: auto;
+
+}
+
+.logotype a {
+  color: red;
+
+}
+
+footer h2 {
+  font-family: "nimbus-sans-extended",serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 6rem 0;
+}
+
+footer hr {
+  margin-bottom: 0; 
+}
+
+footer a {
+  color: #ffffff;
+/*    border-bottom: 1px #ffffff solid;
+    padding-bottom: 10px;*/
+}
+
+footer a:hover {
+  color: #ffffff;
+  opacity: 0.2;
+}
+
+
+footer img {
+    height: 1.5rem;
+    margin-left: .5rem; 
+
+}
+
+hr {
+    max-width: 100%;
+    margin-left: 6em;
+    margin-right: 6em; 
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 9em;
+    margin-bottom: 9em;
+}
+
+@media (max-width: 500px){
+hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em; 
+}
+}
+
+
+@media (max-width: 611px) {
+  .menu.button.large {
+    border: 0px;
+    padding: 2em .5em;
+}
+
+  .brand-detail img {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+
+
+}

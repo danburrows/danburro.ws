@@ -11,7 +11,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: #000000;
+	background: #F5F4ED;
   z-index: 4000;
   
 }
@@ -74,8 +74,9 @@
   top: 10px;
   right: 10px;
   border-radius: 25px;
-  background-color: #000000;
-  color: #F5F4ED;
+  background-color: #F5F4ED;
+  color: #333333;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
   height: 2.5rem;
   min-width: 8rem;
   padding: .9rem 1.5rem;
@@ -89,12 +90,11 @@
       -moz-transition: .5s;
       -webkit-transition: .5s;
       transition: .5s;
-      border: 1px solid #909090;
 }
 
 #trigger-overlay:hover, .overlay-close:hover {
+    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.18), 0 2px 15px 0 rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    border: 1px solid #F5F4ED;
 }
 
 /* Menu style */
@@ -115,7 +115,7 @@
 
 .overlay ul li a {
   display: block;
-  color: #F5F4ED;
+  color: #fff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -132,7 +132,7 @@
 .menu-col p{
   font-family: cardinalfruit-regular;
   font-size: 16px;
-  color: #F5F4ED;
+  color: #000000;
   letter-spacing: 0;
   line-height: 24px;
   margin-right: 10px;
@@ -147,7 +147,7 @@ margin-top: -20px;
 
 font-family: Perpetua Titling MT W00 Light;
 font-size: 24px;
-color: #F5F4ED;
+color: #000000;
 letter-spacing: 0.07px;
 line-height: 26px;
 margin-bottom: 0;
@@ -162,18 +162,18 @@ margin-bottom: 0;
 }
 
 .menu-projects {
-  margin-top: 38px;
+  margin-top: 50px;
 }
 
 .menu-col h1 {
-  color: #F5F4ED;
+  color: #333333;
   font-size: 40px;
   line-height: 29px;
 }
 
 .nav-links {
   height: 100vh;
-  margin-top: 15px;
+  margin-top: 38px;
 }
 
 @media only screen 
@@ -195,3 +195,6 @@ margin-bottom: 0;
 
 
 
+.about h1 {
+  font-size: 40px;
+}
